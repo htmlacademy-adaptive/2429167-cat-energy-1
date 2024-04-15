@@ -1,7 +1,7 @@
 # Личный проект «Кэт энерджи»
 
 * Студент: [Дмитрий Абшилава](https://up.htmlacademy.ru/adaptive-individual/1/user/2429167).
-* Наставник: `Неизвестно`.
+* Наставник: `Александр Лесухин`(https://htmlacademy.ru/profile/caneklis).
 
 ---
 
