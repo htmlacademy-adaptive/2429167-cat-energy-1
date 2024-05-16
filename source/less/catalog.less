@@ -16,6 +16,12 @@
   grid-template-rows: 50px 50px 40px;
   justify-items: start;
   row-gap: 17px;
+
+  &--extra {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+  }
 }
 
 .catalog__card-link-image {
@@ -37,6 +43,7 @@
     margin-top: 78px;
     margin-bottom: 8px;
     position: relative;
+    text-align: center;
   }
 
   &--extra::before {
@@ -82,12 +89,8 @@
   font-size: 12px;
   line-height: 16px;
   grid-column: 1 / 2;
-}
 
-.catalog__inner-title {
-  font-family: "Oswald", sans-serif;
-  font-size: 24px;
-  line-height: 24px;
-  font-weight: 400;
-  text-transform: capitalize;
+  &--extra {
+    text-align: center;
+  }
 }
