@@ -10,3 +10,25 @@
   width: 320px;
   position: relative;
 }
+
+@media (min-width: @tablet-width) {
+  .header {
+    width: 768px;
+    padding-left: 30px;
+    padding-top: 25px;
+    padding-right: 30px;
+  }
+
+  .header__logo-text {
+    display: none;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .header {
+    width: 1200px;
+    padding-left: 110px;
+    padding-right: 110px;
+    padding-bottom: 55px;
+  }
+}

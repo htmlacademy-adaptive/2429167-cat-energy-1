@@ -65,3 +65,45 @@
   color: #444444;
   text-decoration: none;
 }
+
+@media (min-width: @tablet-width) {
+  .footer {
+    width: 768px;
+  }
+
+  .footer__map {
+    padding: 60px 70px;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  .footer__wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 55px 30px;
+  }
+
+  .footer__logo {
+    padding: 0;
+  }
+
+  .footer__social-list {
+    margin: 0;
+  }
+
+  .footer__copyright {
+    margin: 0;
+    padding: 0;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .footer {
+    width: 1400px;
+  }
+
+  .footer__map {
+    width: 565px;
+  }
+}
