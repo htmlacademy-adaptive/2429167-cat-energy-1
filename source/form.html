@@ -2,6 +2,7 @@
 <html class="page" lang="ru">
   <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>HTML Academy: Кэт энерджи</title>
     <link href="css/style.css" rel="stylesheet">
   </head>
@@ -19,13 +20,13 @@
         </button>
         <ul class="nav__list nav__list--disabled">
           <li class="nav__item">
-            <a class="nav__link" href="#">главная</a>
+            <a class="nav__link" href="index.html">главная</a>
           </li>
           <li class="nav__item">
             <a class="nav__link" href="catalog.html">каталог продукции</a>
           </li>
           <li class="nav__item">
-            <a class="nav__link" href="form.html">подбор программы</a>
+            <a class="nav__link" href="#">подбор программы</a>
           </li>
         </ul>
       </nav>
@@ -37,19 +38,21 @@
           Заполните анкету, и мы подберем программу питания для вашего кота
         </h2>
         <form class="page-form" method="post" action="https://echo.htmlacademy.ru/">
-          <label class="page-form__input-label">
-            <span class="page-form__description">имя:*</span>
-            <input class="page-form__field" value="Барсик" type="text" name="page-form__name" required>
-          </label>
-          <label class="page-form__input-label">
-            <span class="page-form__description">вес (кг):*</span>
-            <input class="page-form__field" value="7" type="text" name="page-form__weight" required>
-          </label>
-          <label class="page-form__input-label">
-            <span class="page-form__description">возраст (лет):</span>
-            <input class="page-form__field" value="7" type="text" name="page-form__age">
-          </label>
           <fieldset class="page-form__type">
+            <span class="page-form__input">
+              <label class="page-form__input-label">
+                <span class="page-form__description">имя:*</span>
+                <input class="page-form__field" value="Барсик" type="text" name="page-form__name" required>
+              </label>
+              <label class="page-form__input-label">
+                <span class="page-form__description">вес (кг):*</span>
+                <input class="page-form__field" value="7" type="text" name="page-form__weight" required>
+              </label>
+              <label class="page-form__input-label">
+                <span class="page-form__description">возраст (лет):</span>
+                <input class="page-form__field" value="7" type="text" name="page-form__age">
+              </label>
+            </span>
             <legend class="visually-hidden">
               Что вам необходимо?
             </legend>
@@ -77,14 +80,16 @@
           <h2 class="page__inner-title">
             Контактные данные (владельца кота)
           </h2>
-          <label class="page-form__name">
-            <span class="page-form__description">e-mail:*</span>
-            <input class="page-form__field" placeholder="kuklachev@gmail.com" type="email" name="page-form__email" required>
-          </label>
-          <label class="page-form__name">
-            <span class="page-form__description">телефон:*</span>
-            <input class="page-form__field" placeholder="8 (960) 900-60-90" type="text" name="page-form__phone" required>
-          </label>
+          <fieldset class="page-form__contact">
+            <label class="page-form__name">
+              <span class="page-form__description">e-mail:*</span>
+              <input class="page-form__field" placeholder="kuklachev@gmail.com" type="email" name="page-form__email" required>
+            </label>
+            <label class="page-form__name">
+              <span class="page-form__description">телефон:*</span>
+              <input class="page-form__field" placeholder="8 (960) 900-60-90" type="text" name="page-form__phone" required>
+            </label>
+          </fieldset>
           <h2 class="page__inner-title">Комментарий</h2>
           <label class="page-form__comment">
             <span class="visually-hidden">введите комментарий</span>
@@ -119,10 +124,12 @@
               </label>
             </span>
           </fieldset>
-          <button type="submit" class="page__button page__button--submit">отправить заявку</button>
-          <p class="form-warning">
-            * — Обязательные поля
-          </p>
+          <span class="page-form__end">
+            <button type="submit" class="page__button page__button--submit">отправить заявку</button>
+            <p class="form-warning">
+              * — Обязательные поля
+            </p>
+          </span>
         </form>
       </section>
     </main>

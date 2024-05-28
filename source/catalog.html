@@ -2,6 +2,7 @@
 <html class="page" lang="ru">
   <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>HTML Academy: Кэт энерджи</title>
     <link href="css/style.css" rel="stylesheet">
   </head>
@@ -19,10 +20,10 @@
         </button>
         <ul class="nav__list nav__list--disabled">
           <li class="nav__item">
-            <a class="nav__link" href="#">главная</a>
+            <a class="nav__link" href="index.html">главная</a>
           </li>
           <li class="nav__item">
-            <a class="nav__link" href="catalog.html">каталог продукции</a>
+            <a class="nav__link" href="#">каталог продукции</a>
           </li>
           <li class="nav__item">
             <a class="nav__link" href="form.html">подбор программы</a>
@@ -55,7 +56,7 @@
                 <p class="catalog__card-description-text">700 ₽</p>
               </li>
             </ul>
-            <a class="page__button" href="#">Заказать</a>
+            <a class="page__button page__button--card" href="#">Заказать</a>
           </li>
           <li class="catalog__card">
             <a class="catalog__card-link-image" href="#">
@@ -78,7 +79,7 @@
                 <p class="catalog__card-description-text">1000 ₽</p>
               </li>
             </ul>
-            <a class="page__button" href="#">Заказать</a>
+            <a class="page__button page__button--card" href="#">Заказать</a>
           </li>
           <li class="catalog__card">
             <a class="catalog__card-link-image" href="#">
@@ -101,7 +102,7 @@
                 <p class="catalog__card-description-text">700 ₽</p>
               </li>
             </ul>
-            <a class="page__button" href="#">Заказать</a>
+            <a class="page__button page__button--card" href="#">Заказать</a>
           </li>
           <li class="catalog__card">
             <a class="catalog__card-link-image" href="#">
@@ -124,7 +125,7 @@
                 <p class="catalog__card-description-text">1000 ₽</p>
               </li>
             </ul>
-            <a class="page__button" href="#">Заказать</a>
+            <a class="page__button page__button--card" href="#">Заказать</a>
           </li>
           <li class="catalog__card">
             <a class="catalog__card-link-image" href="#">
@@ -147,7 +148,7 @@
                 <p class="catalog__card-description-text">400 ₽</p>
               </li>
             </ul>
-            <a class="page__button" href="#">Заказать</a>
+            <a class="page__button page__button--card" href="#">Заказать</a>
           </li>
           <li class="catalog__card">
             <a class="catalog__card-link-image" href="#">
@@ -170,7 +171,7 @@
                 <p class="catalog__card-description-text">700 ₽</p>
               </li>
             </ul>
-            <a class="page__button" href="#">Заказать</a>
+            <a class="page__button page__button--card" href="#">Заказать</a>
           </li>
           <li class="catalog__card">
             <a class="catalog__card-link-image" href="#">
@@ -193,7 +194,7 @@
                 <p class="catalog__card-description-text">500 ₽</p>
               </li>
             </ul>
-            <a class="page__button" href="#">Заказать</a>
+            <a class="page__button page__button--card" href="#">Заказать</a>
           </li>
           <li class="catalog__card catalog__card--extra">
             <div class="catalog__card-main catalog__card-main--extra">
@@ -203,43 +204,45 @@
             <button type="button" class="page__button page__button--extra">Показать все</button>
           </li>
         </ul>
-        <h2 class="page__inner-title--catalog">Дополнительные товары</h2>
-        <ul class="catalog-extra">
-          <li class="catalog-extra__card">
-            <a class="catalog-extra__link" href="#">
-              <h3 class="catalog-extra__title">сахарозаменитель</h3>
-            </a>
-            <p class="catalog-extra__description">1 упаковка (100 г)</p>
-            <p class="catalog-extra__price">200 ₽</p>
-            <a class="page__button" href="#">Заказать</a>
-          </li>
-          <li class="catalog-extra__card">
-            <a class="catalog-extra__link" href="#">
-              <h3 class="catalog-extra__title">питьевая вода</h3>
-            </a>
-            <p class="catalog-extra__description">5 литров</p>
-            <p class="catalog-extra__price">50 ₽</p>
-            <a class="page__button" href="#">Заказать</a>
-          </li>
-          <li class="catalog-extra__card">
-            <a class="catalog-extra__link" href="#">
-              <h3 class="catalog-extra__title">молоко</h3>
-            </a>
-            <p class="catalog-extra__description">1 литр</p>
-            <p class="catalog-extra__price">100 ₽</p>
-            <a class="page__button" href="#">Заказать</a>
-          </li>
-          <li class="catalog-extra__card">
-            <a class="catalog-extra__link" href="#">
-              <h3 class="catalog-extra__title">витамины</h3>
-            </a>
-            <p class="catalog-extra__description">1 упаковка (30 г)</p>
-            <p class="catalog-extra__price">300 ₽</p>
-            <a class="page__button" href="#">Заказать</a>
-          </li>
-        </ul>
-        <div class="gift">
-          <p class="gift__description">Закажите все и получите чехол для кота в подарок!</p>
+        <h2 class="page__inner-title page__inner-title--catalog">Дополнительные товары</h2>
+        <div class="catalog-extra__wrapper">
+          <ul class="catalog-extra">
+            <li class="catalog-extra__card">
+              <a class="catalog-extra__link" href="#">
+                <h3 class="catalog-extra__title">сахарозаменитель</h3>
+              </a>
+              <p class="catalog-extra__description">1 упаковка (100 г)</p>
+              <p class="catalog-extra__price">200 ₽</p>
+              <a class="page__button page__button--catalog-extra" href="#">Заказать</a>
+            </li>
+            <li class="catalog-extra__card">
+              <a class="catalog-extra__link" href="#">
+                <h3 class="catalog-extra__title">питьевая вода</h3>
+              </a>
+              <p class="catalog-extra__description">5 литров</p>
+              <p class="catalog-extra__price">50 ₽</p>
+              <a class="page__button page__button--catalog-extra" href="#">Заказать</a>
+            </li>
+            <li class="catalog-extra__card">
+              <a class="catalog-extra__link" href="#">
+                <h3 class="catalog-extra__title">молоко</h3>
+              </a>
+              <p class="catalog-extra__description">1 литр</p>
+              <p class="catalog-extra__price">100 ₽</p>
+              <a class="page__button page__button--catalog-extra" href="#">Заказать</a>
+            </li>
+            <li class="catalog-extra__card">
+              <a class="catalog-extra__link" href="#">
+                <h3 class="catalog-extra__title">витамины</h3>
+              </a>
+              <p class="catalog-extra__description">1 упаковка (30 г)</p>
+              <p class="catalog-extra__price">300 ₽</p>
+              <a class="page__button page__button--catalog-extra" href="#">Заказать</a>
+            </li>
+          </ul>
+          <div class="gift">
+            <p class="gift__description">Закажите все и получите чехол для кота в подарок!</p>
+          </div>
         </div>
       </section>
     </main>

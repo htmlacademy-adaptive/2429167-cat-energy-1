@@ -28,4 +28,47 @@
   width: 161px;
   z-index: 1;
   position: relative;
+  margin: 0;
+}
+
+@media (min-width: @tablet-width) {
+  .gift {
+    width: 707px;
+    background-image: url("/img/gift-tablet.jpg");
+    background-repeat: no-repeat;
+    min-height: 200px;
+    margin-top: 70px;
+    margin-bottom: 75px;
+  }
+
+  .gift::before {
+    width: 707px;
+    min-height: 200px;
+  }
+
+  .gift__description {
+    padding-top: 71px;
+    padding-left: 421px;
+    text-align: left;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .gift {
+    width: 245px;
+    background-image: url("/img/gift-background-desktop.jpg");
+    background-repeat: no-repeat;
+    min-height: 288px;
+    margin: 0;
+  }
+
+  .gift::before {
+    width: 245px;
+    min-height: 288px;
+  }
+
+  .gift__description {
+    padding-left: 42px;
+    padding-top: 185px;
+  }
 }

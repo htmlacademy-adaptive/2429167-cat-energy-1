@@ -46,3 +46,49 @@
   text-transform: uppercase;
   padding-left: 20px;
 }
+
+@media (min-width: @tablet-width) {
+  .programs__element {
+    width: 708px;
+    margin-left: 30px;
+    margin-right: 30px;
+    padding-bottom: 57px;
+    padding-top: 77px;
+  }
+
+  .programs__title {
+    font-size: 36px;
+    line-height: 36px;
+    padding-left: 52px;
+  }
+
+  .programs__text {
+    width: 340px;
+    font-size: 16px;
+    line-height: 24px;
+    padding-left: 52px;
+  }
+
+  .programs__link {
+    font-size: 20px;
+    line-height: 30px;
+    padding-left: 52px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .programs {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .programs__element {
+    width: 570px;
+    min-height: 374px;
+    padding: 0;
+  }
+
+  .programs__element:last-child {
+    margin-top: 0;
+  }
+}

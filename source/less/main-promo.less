@@ -42,4 +42,37 @@
   color: #ffffff;
   text-transform: uppercase;
   z-index: 1;
+  margin: 0;
+}
+
+@media (min-width: @tablet-width) {
+  .main-promo__intro {
+    width: 768px;
+    background: none;
+    background-color: #ffffff;
+    margin-bottom: 50px;
+    margin-left: 120px;
+    min-height: 0;
+
+    &::before {
+      display: none;
+    }
+  }
+
+  .main-promo__title {
+    color: #000000;
+    font-size: 60px;
+    line-height: 60px;
+    text-align: left;
+    width: 420px;
+    margin-bottom: 40px;
+    margin-left: 0;
+  }
+
+  .main-promo__text {
+    color: #000000;
+    font-size: 20px;
+    line-height: 20px;
+    text-align: left;
+  }
 }

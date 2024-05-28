@@ -19,3 +19,27 @@
   text-decoration: none;
   text-transform: uppercase;
 }
+
+@media (min-width: @tablet-width) {
+  .nav__list {
+    display: flex;
+    flex-wrap: wrap;
+    width: 436px;
+    position: static;
+    margin-right: 34px;
+  }
+
+  .nav__toggle {
+    display: none;
+  }
+
+  .nav__item:not(:last-child) {
+    margin-right: 33px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .nav-list {
+    min-width: 475px;
+  }
+}
