@@ -14,11 +14,11 @@
       <a class="header__logo-text" href="#">
         <img src="img/logo-text.svg" alt="Кэт энерджи">
       </a>
-      <nav class="nav">
+      <nav class="nav nav--closed">
         <button class="nav__toggle" type="button">
           <span class="visually-hidden">Открыть меню</span>
         </button>
-        <ul class="nav__list nav__list--disabled">
+        <ul class="nav__list">
           <li class="nav__item">
             <a class="nav__link" href="index.html">главная</a>
           </li>
@@ -205,8 +205,8 @@
           </li>
         </ul>
         <h2 class="page__inner-title page__inner-title--catalog">Дополнительные товары</h2>
-        <div class="catalog-extra__wrapper">
-          <ul class="catalog-extra">
+        <div class="catalog-extra">
+          <ul class="catalog-extra__list">
             <li class="catalog-extra__card">
               <a class="catalog-extra__link" href="#">
                 <h3 class="catalog-extra__title">сахарозаменитель</h3>
@@ -285,5 +285,7 @@
         </div>
       </div>
     </footer>
+
+    <script src="../js/menu-script.js"></script>
   </body>
 </html>
