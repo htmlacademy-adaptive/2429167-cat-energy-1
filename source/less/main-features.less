@@ -1,8 +1,7 @@
 .main-features {
-  margin-top: 20px;
-  width: 280px;
-  margin-right: 20px;
-  margin-left: 20px;
+  width: 100%;
+  max-width: 1220px;
+  margin: 0 auto;
 }
 
 .main-features__title {
@@ -34,17 +33,12 @@
 }
 
 @media (min-width: @tablet-width) {
-  .main-features {
-    margin-left: 30px;
-  }
-
   .main-features__list {
     display: grid;
     grid-template-columns: 280px 280px;
     padding: 0;
     row-gap: 37px;
     column-gap: 137px;
-    margin-top: 32px;
   }
 
   .main-features__item {
@@ -62,7 +56,8 @@
 
 @media (min-width: @desktop-width) {
   .main-features__list {
-    grid-template-columns: 250px 250px 250px 250px;
+    grid-template-columns: repeat(4, 1fr);
     column-gap: 77px;
+    margin-bottom: 69px;
   }
 }
