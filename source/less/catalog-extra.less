@@ -54,7 +54,6 @@
   .catalog-extra__card {
     grid-template-columns: 316px 316px;
     grid-template-rows: 20px 40px;
-    padding-left: 38px;
   }
 
   .catalog-extra__card:first-child {
@@ -83,6 +82,11 @@
     grid-template-rows: none;
     margin: 0;
     width: 100%;
+    align-items: center;
+  }
+
+  .catalog-extra__card:not(:last-child) {
+    padding-bottom: 32px;
   }
 
   .catalog-extra__link {
