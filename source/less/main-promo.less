@@ -1,7 +1,5 @@
-.main-promo {
-  width: 100%;
-  max-width: 1220px;
-  margin: 0 auto;
+.main-promo__wrapper {
+  .wrapper();
 }
 
 .main-promo__intro {
@@ -14,7 +12,6 @@
   background-size: cover;
   margin-bottom: 138px;
   position: relative;
-  box-sizing: border-box;
 
   &::before {
     background-color: #68b738d9;
@@ -40,7 +37,6 @@
   margin-left: 35px;
   padding-top: 27px;
   z-index: 1;
-  box-sizing: border-box;
 }
 
 .main-promo__text {
@@ -54,14 +50,12 @@
   text-transform: uppercase;
   z-index: 1;
   margin: 0;
-  box-sizing: border-box;
 }
 
 @media (min-width: @tablet-width) {
   .main-promo__intro {
     width: 768px;
     background: none;
-    background-color: #ffffff;
     padding-bottom: 50px;
     padding-left: 120px;
     margin-bottom: 0;
@@ -87,5 +81,16 @@
     font-size: 20px;
     line-height: 20px;
     text-align: left;
+  }
+
+  .main-promo {
+    margin-bottom: 526px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .main-promo {
+    background: linear-gradient(90deg, #ffffff 0, #ffffff 50%, @basic-green 50%, @basic-green 100%);
+    margin-bottom: 266px;
   }
 }

@@ -1,10 +1,11 @@
 .main-example {
-  width: 100%;
-  margin: 0 auto;
   padding: 25px 20px 0;
   background-color: #eaeaea;
   padding-bottom: 316px;
-  box-sizing: border-box;
+}
+
+.main-example__wrapper {
+  .wrapper();
 }
 
 .main-example__title {
@@ -13,7 +14,6 @@
   font-size: 36px;
   line-height: 40px;
   font-weight: 400;
-  box-sizing: border-box;
 }
 
 .main-example__text {
@@ -25,7 +25,6 @@
   margin-top: 40px;
   margin-bottom: 20px;
   color: #444444;
-  box-sizing: border-box;
 }
 
 .main-example__results {
@@ -33,14 +32,12 @@
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: space-between;
-  box-sizing: border-box;
 }
 
 .main-example__result {
   width: 124px;
   display: flex;
   flex-direction: column;
-  box-sizing: border-box;
 }
 
 .main-example__result-big {
@@ -50,7 +47,6 @@
   line-height: 24px;
   text-align: center;
   margin: 0;
-  box-sizing: border-box;
 }
 
 .main-example__result-small {
@@ -62,7 +58,6 @@
   margin-top: 7px;
   width: 59px;
   color: #444444;
-  box-sizing: border-box;
 }
 
 .main-example__expense {
@@ -73,13 +68,11 @@
   text-transform: uppercase;
   margin: 0;
   text-align: center;
-  box-sizing: border-box;
 }
 
 @media (min-width: @tablet-width) {
   .main-example {
     background-color: #ffffff;
-    padding: 0 30px;
     position: relative;
   }
 
@@ -124,7 +117,6 @@
   .main-example {
     background-color: #f2f2f2;
     padding-bottom: 150px;
-    padding-left: 110px;
   }
 
   .main-example__title {
@@ -134,11 +126,12 @@
   .main-example__results {
     width: 436px;
     justify-content: space-between;
+    margin-bottom: 55px;
   }
 
   .main-example__expense {
-    width: 267px;
-    left: 110px;
-    top: 375px;
+    position: static;
+    text-align: left;
+    width: 327px;
   }
 }

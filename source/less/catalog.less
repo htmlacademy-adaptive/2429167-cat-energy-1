@@ -1,6 +1,5 @@
 .catalog__list {
-  list-style-type: none;
-  padding: 0;
+  .list-reset();
 }
 
 .catalog__card {
@@ -10,7 +9,6 @@
   grid-template-rows: 50px 50px 40px;
   justify-items: start;
   row-gap: 17px;
-  box-sizing: border-box;
 
   &--extra {
     display: flex;
@@ -134,14 +132,10 @@
     min-width: 250px;
   }
 
-  .catalog-list {
+  .catalog__list {
     display: grid;
     grid-template-columns: 324px 324px;
     gap: 60px;
-  }
-
-  .catalog {
-    padding-left: 30px;
   }
 }
 

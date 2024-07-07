@@ -1,7 +1,5 @@
 .programs {
-  width: 100%;
-  max-width: 1220px;
-  margin: 0 auto;
+  .wrapper();
 }
 
 .programs__element {
@@ -43,7 +41,7 @@
 
 @media (min-width: @tablet-width) {
   .programs__element {
-    padding: 77px 300px 53px 52px;
+    padding: 77px 316px 53px 52px;
   }
 
   .programs__title {
@@ -52,7 +50,6 @@
   }
 
   .programs__text {
-    width: 340px;
     font-size: 16px;
     line-height: 24px;
   }
@@ -74,17 +71,18 @@
   .programs__element {
     width: calc(50% - 40px);
     padding-top: 77px;
+    padding-right: 61px;
     padding-left: 52px;
     padding-bottom: 55px;
-    box-sizing: border-box;
   }
 
   .programs__element:last-child {
     margin-top: 0;
   }
 
-  .programs__text {
-    padding-top: 73px;
+  .programs__title {
+    padding-bottom: 73px;
+    padding-left: 162px;
   }
 
   .programs__link {
