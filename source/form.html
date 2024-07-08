@@ -25,7 +25,7 @@
           <li class="nav__item">
             <a class="nav__link" href="catalog.html">каталог продукции</a>
           </li>
-          <li class="nav__item">
+          <li class="nav__item nav__item--current">
             <a class="nav__link" href="#">подбор программы</a>
           </li>
         </ul>
@@ -78,10 +78,10 @@
                 </li>
               </ul>
             </fieldset>
+            <h2 class="page__inner-title">
+              Контактные данные (владельца кота)
+            </h2>
             <fieldset class="page-form__contact">
-              <h2 class="page__inner-title">
-                Контактные данные (владельца кота)
-              </h2>
               <label class="page-form__name">
                 <span class="page-form__description">e-mail:*</span>
                 <input class="page-form__field" placeholder="kuklachev@gmail.com" type="email" name="page-form__email" required>
@@ -98,36 +98,36 @@
             </label>
             <fieldset class="form-checkbox">
               <legend class="form-checkbox__title">Дополнительно</legend>
-              <span class="form-checkbox__list">
-                <label class="form-checkbox__item">
+              <ul class="form-checkbox__list">
+                <li class="form-checkbox__item">
                   <input class="form-checkbox__input" type="checkbox" name="sweetener" checked>
                   <span class="form-checkbox__label">
                     сахарозаменитель
                   </span>
-                </label>
-                <label class="form-checkbox__item">
+                </li>
+                <li class="form-checkbox__item">
                   <input class="form-checkbox__input" type="checkbox" name="water">
                   <span class="form-checkbox__label">
                     питьевая вода
                   </span>
-                </label>
-                <label class="form-checkbox__item">
+                </li>
+                <li class="form-checkbox__item">
                   <input class="form-checkbox__input" type="checkbox" name="milk">
                   <span class="form-checkbox__label">
                     молоко
                   </span>
-                </label>
-                <label class="form-checkbox__item">
+                </li>
+                <li class="form-checkbox__item">
                   <input class="form-checkbox__input" type="checkbox" name="vitamines">
                   <span class="form-checkbox__label">
                     витамины
                   </span>
-                </label>
-              </span>
+                </li>
+              </ul>
             </fieldset>
             <span class="page-form__end">
               <button type="submit" class="page__button page__button--submit">отправить заявку</button>
-              <p class="form-warning">
+              <p class="page-form__warning">
                 * — Обязательные поля
               </p>
             </span>
@@ -136,13 +136,18 @@
       </div>
     </main>
     <footer class="footer">
-      <section class="footer__map footer__map--inner">
-        <h3 class="footer__map-title">
-          приглашаем <br> к сотрудничеству дилеров!
-        </h3>
-        <p class="footer__map-address">
-          ул. Большая Конюшенная, д. 19/8 Санкт-Петербург
-        </p>
+      <section class="footer__map">
+        <div class="footer__map-text">
+          <h3 class="footer__map-title">
+            приглашаем <br> к сотрудничеству дилеров!
+          </h3>
+          <p class="footer__map-address">
+            ул. Большая Конюшенная, д. 19/8 Санкт-Петербург
+          </p>
+        </div>
+        <div class="footer__map-map">
+
+        </div>
       </section>
       <div class="footer__wrapper">
         <img class="footer__logo" src="img/logo-text.svg" alt="Кэт энерджи">

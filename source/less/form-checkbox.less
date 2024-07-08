@@ -16,10 +16,7 @@
 }
 
 .form-checkbox__list {
-  display: flex;
-  flex-direction: column;
-  width: 280px;
-  margin-left: 20px;
+  .list-reset();
 }
 
 .form-checkbox__label {
@@ -39,5 +36,13 @@
 
   .form-checkbox__list {
     margin-left: 0;
+    display: flex;
+    flex-wrap: wrap;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .form-checkbox__list {
+    justify-content: space-between;
   }
 }

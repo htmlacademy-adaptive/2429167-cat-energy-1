@@ -8,7 +8,7 @@
   width: 100%;
   max-width: 1220px;
   min-height: 301px;
-  background-image: url("../img/index-background-desktop.jpg");
+  background-image: url("../img/index-background-mobile.jpg");
   background-size: cover;
   margin-bottom: 138px;
   position: relative;
@@ -90,7 +90,19 @@
 
 @media (min-width: @desktop-width) {
   .main-promo {
-    background: linear-gradient(90deg, #ffffff 0, #ffffff 50%, @basic-green 50%, @basic-green 100%);
+    position: relative;
+  }
+
+  .main-promo::before {
+    position: absolute;
+    content: "";
+    background: linear-gradient(90deg, @basic-green-transparent 50%, @basic-green-transparent 100%), @bg-image, no-repeat, center;
+    background-size: cover;
     margin-bottom: 266px;
+    top: -117px;
+    height: 694px;
+    width: 50%;
+    right: 0;
+    z-index: -1;
   }
 }

@@ -121,13 +121,14 @@
 
   .page-form__end {
     display: flex;
+    align-items: center;
+    margin-bottom: 60px;
   }
 
-  .form-warning {
+  .page-form__warning {
     margin: 0;
-    position: absolute;
-    top: 1196px;
-    left: 464px;
+    position: static;
+    padding-left: 60px;
   }
 }
 
@@ -151,6 +152,8 @@
 
   .page-form__contact {
     display: flex;
+    flex-direction: row;
+    justify-content: space-between;
   }
 
   .page-form__name {
@@ -159,10 +162,17 @@
 
   .page-form__comment-field {
     width: 1200px;
+    padding-top: 9px;
+    padding-left: 20px;
   }
 
-  .form-warning {
-    top: 1116px;
-    left: 760px;
+  .page-form__end {
+    margin-bottom: 79px;
+    align-items: center;
+  }
+
+  .page-form__warning {
+    position: static;
+    padding-left: 80px;
   }
 }

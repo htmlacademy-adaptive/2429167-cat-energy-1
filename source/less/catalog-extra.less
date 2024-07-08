@@ -1,15 +1,14 @@
 .catalog-extra__list {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
+  .list-reset();
   margin-bottom: 54px;
 }
 
 .catalog-extra__card {
-  margin-top: 42px;
+  padding-top: 13px;
+  padding-bottom: 19px;
 
   display: grid;
-  grid-template-columns: 140px 140px;
+  grid-template-columns: 1fr 1fr;
   justify-items: start;
   row-gap: 13px;
 
@@ -109,5 +108,15 @@
 
   .catalog-extra__list {
     grid-column: 1 / span 3;
+  }
+}
+
+@media (max-width: @mobile-width-only) {
+  .catalog-extra__card:first-child {
+    border-top: 1px solid #cdcdcd;
+  }
+
+  .catalog-extra__card {
+    border-bottom: 1px solid #cdcdcd;
   }
 }

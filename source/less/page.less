@@ -59,11 +59,13 @@
   color: #ffffff;
   text-transform: uppercase;
   text-align: center;
-  padding: 10px 109px;
+  padding: 10px 20px;
   transition: all ease 0.6s;
   grid-row: 3 / 4;
+  grid-column: 1 / -1;
   box-sizing: border-box;
   display: inline;
+  width: 100%;
 
   &:hover {
     background-color: #5eaa2f;
@@ -135,6 +137,8 @@
 
   .page__button--submit {
     position: relative;
+    margin: 0;
+    width: 50%;
   }
 }
 
@@ -146,6 +150,7 @@
   .page__button--submit {
     padding: 14px 20px;
     margin: 0;
+    width: 50%;
   }
 
   .page__button--card {
