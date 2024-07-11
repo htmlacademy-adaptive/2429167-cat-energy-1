@@ -37,12 +37,28 @@
     padding: 0;
     row-gap: 37px;
     column-gap: 137px;
+    counter-reset: features;
   }
 
   .main-features__item {
     margin: 0;
     padding-top: 151px;
     padding-bottom: 57px;
+    position: relative;
+  }
+
+  .main-features__item::before {
+    counter-increment: features;
+    content: "" counter(features) "";
+    position: absolute;
+    font-family: "Oswald", sans-serif;
+    font-size: 280px;
+    line-height: 280px;
+    color: #f2f2f2;
+    z-index: -1;
+    bottom: 0;
+    right: 0;
+    text-align: center;
   }
 
   .main-features__text {

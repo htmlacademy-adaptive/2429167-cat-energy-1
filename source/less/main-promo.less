@@ -1,5 +1,10 @@
 .main-promo__wrapper {
   .wrapper();
+  position: relative;
+}
+
+.main-promo {
+  margin-bottom: 20px;
 }
 
 .main-promo__intro {
@@ -52,6 +57,16 @@
   margin: 0;
 }
 
+.main-promo__background {
+  position: absolute;
+  background-image: url("../img/index-can-mobile.png");
+  content: "";
+  width: 280px;
+  height: 270px;
+  background-repeat: no-repeat;
+  bottom: 26px;
+}
+
 @media (min-width: @tablet-width) {
   .main-promo__intro {
     width: 768px;
@@ -98,7 +113,6 @@
     content: "";
     background: linear-gradient(90deg, @basic-green-transparent 50%, @basic-green-transparent 100%), @bg-image, no-repeat, center;
     background-size: cover;
-    margin-bottom: 266px;
     top: -171px;
     height: 694px;
     width: 50%;
