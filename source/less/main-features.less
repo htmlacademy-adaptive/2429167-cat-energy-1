@@ -13,12 +13,52 @@
 .main-features__list {
   list-style-type: none;
   padding: 0;
-  padding-left: 80px;
   margin: 0;
+  display: grid;
+  row-gap: 20px;
 }
 
 .main-features__item {
-  margin-top: 20px;
+  position: relative;
+  padding-left: 80px;
+  min-height: 60px;
+
+  &::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 60px;
+    height: 60px;
+    display: block;
+    background-color: @basic-green;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+
+  &--step-one {
+    &::after {
+      background-image: url("../img/features-leaf.svg");
+    }
+  }
+
+  &--step-two {
+    &::after {
+      background-image: url("../img/features-powder.svg");
+    }
+  }
+
+  &--step-three {
+    &::after {
+      background-image: url("../img/features-eat.svg");
+    }
+  }
+
+  &--step-four {
+    &::after {
+      background-image: url("../img/features-time.svg");
+    }
+  }
 }
 
 .main-features__text {
@@ -42,6 +82,7 @@
 
   .main-features__item {
     margin: 0;
+    padding-left: 0;
     padding-top: 151px;
     padding-bottom: 57px;
     position: relative;

@@ -28,6 +28,8 @@
   display: grid;
   grid-template-columns: 1fr 1fr;
   background-color: #ffffff;
+  padding-top: 26px;
+  padding-bottom: 26px;
 }
 
 .footer__map-title {
@@ -84,7 +86,7 @@
 
 @media (min-width: @tablet-width) {
   .footer__map {
-    padding: 60px 70px;
+    padding: 0;
     flex-wrap: wrap;
     justify-content: space-between;
   }
@@ -111,6 +113,10 @@
   .footer__copyright {
     margin: 0;
     padding: 0;
+  }
+
+  .footer__map-text {
+    padding: 60px 70px;
   }
 }
 
