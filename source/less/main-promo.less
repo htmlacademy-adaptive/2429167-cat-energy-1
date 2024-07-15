@@ -82,6 +82,15 @@
     &::before {
       display: none;
     }
+
+    &::after {
+      background-image: url("../img/index-can-tablet.png");
+      width: 709px;
+      height: 609px;
+      top: 90%;
+      left: 5%;
+      z-index: -1;
+    }
   }
 
   .main-promo__title {
@@ -92,6 +101,7 @@
     width: 420px;
     margin-bottom: 40px;
     margin-left: 0;
+    padding-top: 0;
   }
 
   .main-promo__text {
@@ -109,17 +119,18 @@
 @media (min-width: @desktop-width) {
   .main-promo {
     position: relative;
+    margin-bottom: 340px;
   }
 
-  .main-promo::before {
-    position: absolute;
-    content: "";
-    background: linear-gradient(90deg, @basic-green-transparent 50%, @basic-green-transparent 100%), @bg-image, no-repeat, center;
-    background-size: cover;
-    top: -171px;
-    height: 694px;
-    width: 50%;
-    right: 0;
-    z-index: -1;
+  .main-promo__intro {
+    margin-top: 110px;
+
+    &::after {
+      background-image: url("../img/index-can.png");
+      width: 552px;
+      height: 499px;
+      left: 65%;
+      top: 0;
+    }
   }
 }

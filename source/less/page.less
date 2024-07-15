@@ -59,12 +59,14 @@
   .page__main-title {
     font-size: 60px;
     line-height: 60px;
+    margin: 0;
   }
 
   .page__inner-title {
     font-size: 36px;
     line-height: 36px;
     margin-left: 0;
+    margin-bottom: 0;
     padding-left: 40px;
     padding-right: 40px;
 
@@ -84,6 +86,16 @@
       width: 300vw;
       transform: translateX(-50%);
       z-index: -1;
+    }
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .page__inner-title {
+    margin: 0;
+
+    &:first-child {
+      margin: 0;
     }
   }
 }
@@ -120,7 +132,7 @@
     color: #444444;
     font-size: 16px;
     line-height: 20px;
-    padding: 10px 95px;
+    padding: 10px 20px;
     cursor: pointer;
   }
 
@@ -164,7 +176,7 @@
   }
 
   .page__button--card {
-    padding: 10px 94px;
+    padding: 10px 20px;
   }
 
   .page__button--catalog-extra {
@@ -172,6 +184,11 @@
     grid-column: 1 / -1;
     grid-row: 2 / 3;
     width: 100%;
+  }
+
+  .page__button--extra {
+    margin-bottom: 40px;
+    width: 70%;
   }
 
   .page__button--submit {

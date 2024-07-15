@@ -5,24 +5,22 @@
 .programs__element {
   background-color: #f2f2f2;
   padding: 30px 20px 18px;
+  margin-bottom: 20px;
 
-  &:last-child {
-    margin-top: 20px;
+
+  &--slim {
+    background-image: url("../img/programs-slim.svg");
+    background-repeat: no-repeat;
+    background-position: 20px 21px;
+    background-size: 50px;
   }
-}
 
-.programs__element--slim {
-  background-image: url("../img/programs-slim.svg");
-  background-repeat: no-repeat;
-  background-position: 20px 21px;
-  background-size: 50px;
-}
-
-.programs__element--pro {
-  background-image: url("../img/programs-pro.svg");
-  background-repeat: no-repeat;
-  background-position: 13px 21px;
-  background-size: 67px;
+  &--pro {
+    background-image: url("../img/programs-pro.svg");
+    background-repeat: no-repeat;
+    background-position: 13px 21px;
+    background-size: 67px;
+  }
 }
 
 .programs__title {
@@ -86,11 +84,24 @@
 @media (min-width: @tablet-width) {
   .programs__element {
     padding: 77px 316px 53px 52px;
+
+    &--slim {
+      background-size: 200px;
+      background-position: 95% 92px;
+      margin-bottom: 30px;
+    }
+
+    &--pro {
+      background-size: 268px;
+      background-position: 95% 92px;
+      margin-bottom: 45px;
+    }
   }
 
   .programs__title {
     font-size: 36px;
     line-height: 36px;
+    padding-left: 0;
   }
 
   .programs__text {
@@ -118,6 +129,16 @@
     padding-right: 61px;
     padding-left: 52px;
     padding-bottom: 55px;
+
+    &--slim {
+      background-size: 100px;
+      background-position: 62px 41px;
+    }
+
+    &--pro {
+      background-size: 134px;
+      background-position: 33px 47px;
+    }
   }
 
   .programs__element:last-child {

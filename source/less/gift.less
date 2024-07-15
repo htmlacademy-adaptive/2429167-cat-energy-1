@@ -30,6 +30,16 @@
   z-index: 1;
   position: relative;
   margin: 0 auto;
+
+  &::before {
+    content: "";
+    position: absolute;
+    width: 70px;
+    height: 80px;
+    background-image: url("../img/icon-gift.svg");
+    top: 59px;
+    left: 25%;
+  }
 }
 
 @media (min-width: @tablet-width) {
@@ -38,7 +48,6 @@
     background-image: url("/img/gift-tablet.jpg");
     background-repeat: no-repeat;
     min-height: 200px;
-    margin-top: 70px;
     margin-bottom: 75px;
   }
 
@@ -50,6 +59,10 @@
   .gift__description {
     padding-top: 71px;
     text-align: left;
+
+    &::before {
+      left: 0;
+    }
   }
 }
 
