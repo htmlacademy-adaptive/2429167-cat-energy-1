@@ -8,139 +8,174 @@
   </head>
   <body class="page__body">
     <header class="header">
-      <a class="header__logo" href="#">
-        <img src="img/logo-mobile.svg" alt="Кэт энерджи">
-      </a>
-      <a class="header__logo-text" href="#">
-        <img src="img/logo-text.svg" alt="Кэт энерджи">
-      </a>
-      <nav class="nav">
-        <button class="nav__toggle" type="button">
-          <span class="visually-hidden">Открыть меню</span>
-        </button>
-        <ul class="nav__list nav__list--disabled">
-          <li class="nav__item">
-            <a class="nav__link" href="index.html">главная</a>
-          </li>
-          <li class="nav__item">
-            <a class="nav__link" href="catalog.html">каталог продукции</a>
-          </li>
-          <li class="nav__item">
-            <a class="nav__link" href="#">подбор программы</a>
-          </li>
-        </ul>
-      </nav>
+      <div class="header__wrapper">
+        <a class="header__logo" href="#">
+          <img src="img/logo-mobile.svg" alt="Кэт энерджи">
+        </a>
+        <a class="header__logo-text" href="#">
+          <img src="img/logo-text.svg" alt="Кэт энерджи">
+        </a>
+        <nav class="nav nav--closed">
+          <button class="nav__toggle" type="button">
+            <span class="visually-hidden">Открыть меню</span>
+          </button>
+          <ul class="nav__list">
+            <li class="nav__item">
+              <a class="nav__link" href="index.html">главная</a>
+            </li>
+            <li class="nav__item">
+              <a class="nav__link" href="catalog.html">каталог продукции</a>
+            </li>
+            <li class="nav__item nav__item--current">
+              <a class="nav__link" href="#">подбор программы</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
     </header>
     <main class="page__main">
-      <h1 class="page__main-title">Подбор программы</h1>
-      <section class="form">
-        <h2 class="form__title">
-          Заполните анкету, и мы подберем программу питания для вашего кота
-        </h2>
-        <form class="page-form" method="post" action="https://echo.htmlacademy.ru/">
-          <fieldset class="page-form__type">
-            <span class="page-form__input">
-              <label class="page-form__input-label">
-                <span class="page-form__description">имя:*</span>
-                <input class="page-form__field" value="Барсик" type="text" name="page-form__name" required>
-              </label>
-              <label class="page-form__input-label">
-                <span class="page-form__description">вес (кг):*</span>
-                <input class="page-form__field" value="7" type="text" name="page-form__weight" required>
-              </label>
-              <label class="page-form__input-label">
-                <span class="page-form__description">возраст (лет):</span>
-                <input class="page-form__field" value="7" type="text" name="page-form__age">
-              </label>
-            </span>
-            <legend class="visually-hidden">
-              Что вам необходимо?
-            </legend>
-            <ul class="page-form__list">
-              <li class="page-form__item">
-                <label class="page-form__control">
-                  <input class="page-form__control-input" type="radio" name="radiobutton" checked>
-                  <span class="page-form__control-label">похудение</span>
-                </label>
-              </li>
-              <li class="page-form__item">
-                <label class="page-form__control">
-                  <input class="page-form__control-input" type="radio" name="radiobutton">
-                  <span class="page-form__control-label">набор массы</span>
-                </label>
-              </li>
-              <li class="page-form__item">
-                <label class="page-form__control">
-                  <input class="page-form__control-input" type="radio" name="radiobutton">
-                  <span class="page-form__control-label">не знаю (нужен ваш совет)</span>
-                </label>
-              </li>
-            </ul>
-          </fieldset>
-          <h2 class="page__inner-title">
-            Контактные данные (владельца кота)
+      <div class="page__wrapper">
+        <h1 class="page__main-title">Подбор программы</h1>
+        <section class="form">
+          <h2 class="form__title">
+            Заполните анкету, и мы подберем программу питания для вашего кота
           </h2>
-          <fieldset class="page-form__contact">
-            <label class="page-form__name">
-              <span class="page-form__description">e-mail:*</span>
-              <input class="page-form__field" placeholder="kuklachev@gmail.com" type="email" name="page-form__email" required>
+          <form class="page-form" method="post" action="https://echo.htmlacademy.ru/">
+            <fieldset class="page-form__type">
+              <span class="page-form__input">
+                <label class="page-form__input-label">
+                  <span class="page-form__description">имя:*</span>
+                  <input class="page-form__field" placeholder="Барсик" type="text" name="page-form__name" required>
+                </label>
+                <label class="page-form__input-label">
+                  <span class="page-form__description">вес (кг):*</span>
+                  <input class="page-form__field" placeholder="7" type="text" name="page-form__weight" required>
+                </label>
+                <label class="page-form__input-label">
+                  <span class="page-form__description">возраст (лет):</span>
+                  <input class="page-form__field" placeholder="7" type="text" name="page-form__age">
+                </label>
+              </span>
+              <ul class="page-form__list">
+                <li class="page-form__item">
+                  <label class="page-form__control">
+                    <input class="page-form__control-input visually-hidden" type="radio" name="radiobutton" checked>
+                    <span class="page-form__control-mark"></span>
+                    <span class="page-form__control-label">похудение</span>
+                  </label>
+                </li>
+                <li class="page-form__item">
+                  <label class="page-form__control">
+                    <input class="page-form__control-input visually-hidden" type="radio" name="radiobutton">
+                    <span class="page-form__control-mark"></span>
+                    <span class="page-form__control-label">набор массы</span>
+                  </label>
+                </li>
+                <li class="page-form__item">
+                  <label class="page-form__control">
+                    <input class="page-form__control-input visually-hidden" type="radio" name="radiobutton">
+                    <span class="page-form__control-mark"></span>
+                    <span class="page-form__control-label">не знаю (нужен ваш совет)</span>
+                  </label>
+                </li>
+              </ul>
+            </fieldset>
+            <h2 class="page__inner-title">
+              Контактные данные (владельца кота)
+            </h2>
+            <fieldset class="page-form__contact">
+              <label class="page-form__name">
+                <span class="page-form__description">e-mail:*</span>
+                <input class="page-form__field" placeholder="kuklachev@gmail.com" type="email" name="page-form__email" required>
+                <span class="page-form__field-icon">
+                  <svg width="18" height="14" viewBox="0 0 18 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M0.5 5.5V13.5H17.5V5.5M0.5 0.5H17.5V2.5L9 8.5L0.5 2.5V0.5Z" stroke="black" stroke-linecap="round" stroke-linejoin="round"/>
+                  </svg>
+                </span>
+              </label>
+              <label class="page-form__name">
+                <span class="page-form__description">телефон:*</span>
+                <input class="page-form__field" placeholder="8 (960) 900-60-90" type="text" name="page-form__phone" required>
+                <span class="page-form__field-icon">
+                  <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M7 8H15.5M15.5 8L13 5.5M15.5 8L13 10.5M5.5 0.5V5.5H2.5V10.5H5.5V15.5H3C1.5 15.5 0.5 14.5 0.5 13V3C0.5 1.5 1.5 0.5 3 0.5H5.5Z" stroke="black" stroke-linecap="round" stroke-linejoin="round"/>
+                  </svg>
+                </span>
+              </label>
+            </fieldset>
+            <h2 class="page__inner-title">Комментарий</h2>
+            <label class="page-form__comment">
+              <span class="visually-hidden">введите комментарий</span>
+              <textarea class="page-form__comment-field" placeholder="расскажите обо всех повадках кота" name="page-form__comment"></textarea>
             </label>
-            <label class="page-form__name">
-              <span class="page-form__description">телефон:*</span>
-              <input class="page-form__field" placeholder="8 (960) 900-60-90" type="text" name="page-form__phone" required>
-            </label>
-          </fieldset>
-          <h2 class="page__inner-title">Комментарий</h2>
-          <label class="page-form__comment">
-            <span class="visually-hidden">введите комментарий</span>
-            <input class="page-form__comment-field" placeholder="расскажите обо всех повадках кота" type="text" name="page-form__comment">
-          </label>
-          <fieldset class="form-checkbox">
-            <legend class="form-checkbox__title">Дополнительно</legend>
-            <span class="form-checkbox__list">
-              <label class="form-checkbox__item">
-                <input class="form-checkbox__input" type="checkbox" name="sweetener" checked>
-                <span class="form-checkbox__label">
-                  сахарозаменитель
-                </span>
-              </label>
-              <label class="form-checkbox__item">
-                <input class="form-checkbox__input" type="checkbox" name="water">
-                <span class="form-checkbox__label">
-                  питьевая вода
-                </span>
-              </label>
-              <label class="form-checkbox__item">
-                <input class="form-checkbox__input" type="checkbox" name="milk">
-                <span class="form-checkbox__label">
-                  молоко
-                </span>
-              </label>
-              <label class="form-checkbox__item">
-                <input class="form-checkbox__input" type="checkbox" name="vitamines">
-                <span class="form-checkbox__label">
-                  витамины
-                </span>
-              </label>
-            </span>
-          </fieldset>
-          <span class="page-form__end">
-            <button type="submit" class="page__button page__button--submit">отправить заявку</button>
-            <p class="form-warning">
-              * — Обязательные поля
-            </p>
-          </span>
-        </form>
-      </section>
+            <fieldset class="form-checkbox">
+              <legend class="page__inner-title">Дополнительно</legend>
+              <ul class="form-checkbox__list">
+                <li class="form-checkbox__item">
+                  <label class="form-checkbox__checkbox">
+                    <input class="form-checkbox__input visually-hidden" type="checkbox" name="sweetener" checked>
+                    <span class="form-checkbox__input-mark"></span>
+                    <span class="form-checkbox__label">
+                      сахарозаменитель
+                    </span>
+                  </label>
+                </li>
+                <li class="form-checkbox__item">
+                  <label class="form-checkbox__checkbox">
+                    <input class="form-checkbox__input visually-hidden" type="checkbox" name="water">
+                    <span class="form-checkbox__input-mark"></span>
+                    <span class="form-checkbox__label">
+                      питьевая вода
+                    </span>
+                  </label>
+                </li>
+                <li class="form-checkbox__item">
+                  <label class="form-checkbox__checkbox">
+                    <input class="form-checkbox__input visually-hidden" type="checkbox" name="milk">
+                    <span class="form-checkbox__input-mark"></span>
+                    <span class="form-checkbox__label">
+                      молоко
+                    </span>
+                  </label>
+                </li>
+                <li class="form-checkbox__item">
+                  <label class="form-checkbox__checkbox">
+                    <input class="form-checkbox__input visually-hidden" type="checkbox" name="vitamines">
+                    <span class="form-checkbox__input-mark"></span>
+                    <span class="form-checkbox__label">
+                      витамины
+                    </span>
+                  </label>
+                </li>
+              </ul>
+            </fieldset>
+            <div class="page-form__end">
+              <button type="submit" class="page__button page__button--submit">отправить заявку</button>
+              <p class="page-form__warning">
+                * — Обязательные поля
+              </p>
+            </div>
+          </form>
+        </section>
+      </div>
     </main>
     <footer class="footer">
-      <section class="footer__map footer__map--inner">
-        <h3 class="footer__map-title">
-          приглашаем <br> к сотрудничеству дилеров!
-        </h3>
-        <p class="footer__map-address">
-          ул. Большая Конюшенная, д. 19/8 Санкт-Петербург
-        </p>
+      <section class="footer__map">
+        <div class="footer__map-text">
+          <h3 class="footer__map-title">
+            приглашаем <br> к сотрудничеству дилеров!
+          </h3>
+          <p class="footer__map-address">
+            ул. Большая Конюшенная, д. 19/8 Санкт-Петербург
+          </p>
+        </div>
+        <div class="footer__map-map">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6037999040354!2d30.322010416394033!3d59.938716271971415!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca5ba729%3A0xea9c53d4493c879f!2sBolshaya+Konyushennaya+ul.%2C+19%2C+Sankt-Peterburg%2C+Russia%2C+191186!5e0!3m2!1sen!2s!4v1441888483426"
+            allowfullscreen
+            title="Офис компании по адресу набережная реки Карповки, 5, литера П, Санкт-Петербург">
+          </iframe>
+        </div>
       </section>
       <div class="footer__wrapper">
         <img class="footer__logo" src="img/logo-text.svg" alt="Кэт энерджи">
@@ -172,5 +207,7 @@
         </div>
       </div>
     </footer>
+
+    <script src="js/menu-script.js"></script>
   </body>
 </html>
