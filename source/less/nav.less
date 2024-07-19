@@ -14,13 +14,10 @@
 }
 
 .nav__toggle {
-  position: absolute;
   border: none;
   background-color: #ffffff;
   width: 18px;
   height: 18px;
-  top: 23px;
-  right: 20px;
   padding: 0;
 
   &::after {
@@ -30,8 +27,8 @@
     width: 24px;
     height: 1px;
     transform: rotate(45deg);
-    top: 9px;
-    left: -3px;
+    top: 23px;
+    right: 16px;
   }
 
   &::before {
@@ -41,8 +38,8 @@
     width: 24px;
     height: 1px;
     transform: rotate(-45deg);
-    top: 9px;
-    left: -3px;
+    top: 23px;
+    right: 16px;
   }
 }
 
@@ -53,6 +50,15 @@
   text-transform: uppercase;
   padding-top: 22px;
   padding-bottom: 24px;
+
+  &:first-child {
+    border-bottom: 1px solid #e6e6e6;
+    border-top: 1px solid #e6e6e6;
+  }
+
+  &:not(:first-child) {
+    border-bottom: 1px solid #e6e6e6;
+  }
 }
 
 @media (min-width: @tablet-width) {
