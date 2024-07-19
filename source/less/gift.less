@@ -42,9 +42,17 @@
   }
 }
 
+@media (max-width: @mobile-width-only) {
+  @media (min-resolution: 2dppx) {
+    .gift {
+      background-image: url("../img/catalog-background-gift-2x.jpg");
+    }
+  }
+}
+
 @media (min-width: @tablet-width) {
   .gift {
-    width: 707px;
+    width: 100%;
     background-image: url("/img/gift-tablet.jpg");
     background-repeat: no-repeat;
     min-height: 200px;
@@ -52,7 +60,7 @@
   }
 
   .gift::before {
-    width: 707px;
+    width: 100%;
     min-height: 200px;
   }
 
@@ -61,7 +69,13 @@
     text-align: left;
 
     &::before {
-      left: 0;
+      left: -150%;
+    }
+  }
+
+  @media (min-resolution: 2dppx) {
+    .gift {
+      background-image: url("../img/gift-tablet-2x.jpg");
     }
   }
 }
@@ -83,5 +97,15 @@
   .gift__description {
     padding-left: 42px;
     padding-top: 185px;
+
+    &::before {
+      left: 25%;
+    }
+  }
+
+  @media (min-resolution: 2dppx) {
+    .gift {
+      background-image: url("../img/gift-background-desktop-2x.jpg");
+    }
   }
 }
