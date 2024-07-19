@@ -16,8 +16,8 @@
 .nav__toggle {
   border: none;
   background-color: #ffffff;
-  width: 18px;
-  height: 18px;
+  width: 24px;
+  height: 24px;
   padding: 0;
 
   &::after {
@@ -28,7 +28,7 @@
     height: 1px;
     transform: rotate(45deg);
     top: 23px;
-    right: 16px;
+    right: 20px;
   }
 
   &::before {
@@ -39,7 +39,20 @@
     height: 1px;
     transform: rotate(-45deg);
     top: 23px;
-    right: 16px;
+    right: 20px;
+  }
+}
+
+.nav--closed .nav__toggle {
+  background-image: url("../img/button-icon.svg");
+  background-repeat: no-repeat;
+  background-position: 0 -2px;
+  width: 24px;
+  height: 24px;
+
+  &::before,
+  &::after {
+    display: none;
   }
 }
 
