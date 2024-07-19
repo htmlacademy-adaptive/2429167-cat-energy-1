@@ -6,13 +6,19 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>HTML Academy: Кэт энерджи</title>
   <link href="css/style.css" rel="stylesheet">
+  <link href="favicon.ico" rel="icon">
+  <link href="img/favicon.png" rel="icon">
 </head>
 
 <body class="page__body">
   <header class="header header--main">
     <div class="header__wrapper">
       <a class="header__logo" href="#">
-        <img src="img/logo-mobile.svg" alt="Кэт энерджи">
+        <picture>
+          <source media="(min-width: 1280px)" srcset="img/logo-desktop.svg">
+          <source media="(min-width: 768px)" srcset="img/logo-tablet.svg">
+          <img src="img/logo-mobile.svg" alt="Кэт энерджи">
+        </picture>
       </a>
       <a class="header__logo-text" href="#">
         <img src="img/logo-text.svg" alt="Кэт энерджи">
