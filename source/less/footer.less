@@ -82,6 +82,18 @@
   text-decoration: none;
 }
 
+.footer__social-link-icon {
+  fill: #666666;
+}
+
+.footer__social-link:hover .footer__social-link-icon {
+  fill: @basic-green;
+}
+
+.footer__social-link:active .footer__social-link-icon {
+  fill: @basic-green-transparent-seconary;
+}
+
 @media (min-width: @tablet-width) {
   .footer__map {
     padding: 0;
@@ -119,6 +131,10 @@
 }
 
 @media (min-width: @desktop-width) {
+  .footer__logo {
+    margin: 0;
+  }
+
   .footer__map {
     display: grid;
     grid-template-columns: 1fr 1220px 1fr;
