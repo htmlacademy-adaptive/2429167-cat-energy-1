@@ -35,9 +35,14 @@
 }
 
 .main-example__result {
+  position: relative;
   width: 124px;
   display: flex;
   flex-direction: column;
+  border: 2px solid #cdcdcd;
+  border-radius: 4px;
+  padding-top: 14px;
+  padding-bottom: 18px;
 }
 
 .main-example__result-big {
@@ -50,14 +55,20 @@
 }
 
 .main-example__result-small {
+  position: absolute;
   font-family: "Lato", sans-serif;
   font-size: 12px;
   line-height: 12px;
   text-align: center;
-  margin: 0 auto;
-  margin-top: 7px;
+  margin: 0;
+  padding: 0 10px;
   width: 59px;
   color: #444444;
+  background-color: #eaeaea;
+  top: 90%;
+  left: 50%;
+  transform: translateX(-50%);
+  box-sizing: content-box;
 }
 
 .main-example__expense {
@@ -127,11 +138,11 @@
 
   .main-example__results {
     justify-content: flex-start;
+    margin-bottom: 99px;
   }
 
   .main-example__result {
     margin-right: 43px;
-    margin-top: 55px;
     width: 162px;
   }
 
@@ -141,9 +152,10 @@
   }
 
   .main-example__result-small {
-    width: fit-content;
+    width: max-content;
     font-size: 14px;
     line-height: 14px;
+    background-color: #ffffff;
   }
 
   .main-example__expense {
@@ -171,6 +183,10 @@
     width: 436px;
     justify-content: space-between;
     margin-bottom: 55px;
+  }
+
+  .main-example__result-small {
+    background-color: #f2f2f2;
   }
 
   .main-example__expense {
