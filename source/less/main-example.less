@@ -1,6 +1,7 @@
 .main-example {
-  padding: 25px 20px 0;
+  padding: 0;
   background-color: #eaeaea;
+  padding-top: 25px;
   padding-bottom: 40px;
 }
 
@@ -10,6 +11,7 @@
 
 .main-example__title {
   margin: 0;
+  margin-bottom: 40px;
   font-family: "Oswald", sans-serif;
   font-size: 36px;
   line-height: 40px;
@@ -31,6 +33,7 @@
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: space-between;
+  margin-bottom: 30px;
 }
 
 .main-example__result {
@@ -50,6 +53,7 @@
   font-size: 24px;
   line-height: 24px;
   text-align: center;
+  text-transform: uppercase;
   margin: 0;
 }
 
@@ -71,13 +75,21 @@
 }
 
 .main-example__expense {
+  display: flex;
+  justify-content: center;
   font-family: "Oswald", sans-serif;
   font-size: 14px;
   line-height: 20px;
   font-weight: 400;
   text-transform: uppercase;
-  margin: 0;
   text-align: center;
+  margin: 0;
+  margin-bottom: 20px;
+}
+
+.main-example__expense-part-one,
+.main-example__expense-part-two {
+  margin: 0;
 }
 
 .main-example__slider {
@@ -88,7 +100,7 @@
 
 .main-example__slider-toggle {
   position: absolute;
-  top: 50%;
+  top: 43%;
   left: 50%;
   transform: translateX(-54%);
   display: block;
@@ -153,16 +165,24 @@
     background-color: #ffffff;
     position: relative;
     padding-top: 0;
+    margin-bottom: 60px;
+  }
+
+  .main-example__title {
+    font-size: 60px;
+    line-height: 60px;
+    margin-bottom: 60px;
   }
 
   .main-example__text {
     font-size: 16px;
     line-height: 24px;
+    margin-bottom: 54px;
   }
 
   .main-example__results {
     justify-content: flex-start;
-    margin-bottom: 99px;
+    margin-bottom: 105px;
   }
 
   .main-example__result {
@@ -183,13 +203,29 @@
   }
 
   .main-example__expense {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
     position: absolute;
-    top: 198px;
+    margin: 0;
+    top: 257px;
     left: 564px;
     width: 174px;
     font-size: 20px;
     line-height: 20px;
     text-align: right;
+  }
+
+  .main-example__expense-part-one {
+    margin-bottom: 9px;
+  }
+
+  .main-example__slider {
+    margin: 0 auto;
+  }
+
+  .main-example__slider-toggle {
+    top: 46%;
   }
 }
 
