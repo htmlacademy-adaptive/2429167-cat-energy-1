@@ -151,6 +151,11 @@
 
   .footer__social-list {
     margin: 0;
+
+    &::before,
+    &::after {
+      display: none;
+    }
   }
 
   .footer__copyright {
@@ -191,5 +196,13 @@
     margin: 0;
     padding: 60px 78px 60px 80px;
     background-color: #ffffff;
+  }
+
+  .footer__wrapper {
+    padding: 67px 0;
+  }
+
+  .footer__social-list {
+    align-items: center;
   }
 }
