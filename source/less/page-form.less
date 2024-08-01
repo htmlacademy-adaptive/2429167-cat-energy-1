@@ -186,6 +186,12 @@
     line-height: 30px;
   }
 
+  .page-form__input-label {
+    &:not(:last-child) {
+      margin-bottom: 13px;
+    }
+  }
+
   .page-form__control-label {
     font-size: 20px;
     line-height: 30px;
@@ -201,11 +207,15 @@
     line-height: 30px;
     margin: 0;
     margin-top: 87px;
-    margin-bottom: 65px;
+    margin-bottom: 61px;
     padding: 0;
     padding-top: 11px;
     padding-left: 20px;
     height: 175px;
+  }
+
+  .page-form__item:not(:last-child) {
+    margin-bottom: 11px;
   }
 
   .page-form__end {
@@ -236,7 +246,7 @@
 
   .page-form__input {
     padding-bottom: 0;
-    margin-bottom: 72px;
+    margin-bottom: 69px;
 
     &::before {
       display: none;
@@ -254,13 +264,14 @@
   }
 
   .page-form__contact {
-    margin-top: 76px;
-    margin-bottom: 65px;
+    margin-top: 72px;
+    margin-bottom: 37px;
   }
 
   .page-form__field {
     font-size: 20px;
     line-height: 30px;
+    padding-left: 20px;
   }
 
   .page-form__field-icon {

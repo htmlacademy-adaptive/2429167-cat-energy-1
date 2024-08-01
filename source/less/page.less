@@ -4,7 +4,8 @@
 }
 
 .page__wrapper {
-  .wrapper();
+  padding-left: 70px;
+  padding-right: 70px;
 }
 
 .page__main-title {
@@ -67,7 +68,6 @@
     line-height: 36px;
     margin-left: 0;
     margin-bottom: 0;
-    padding-left: 40px;
     padding-right: 40px;
 
     &::after {
@@ -86,6 +86,10 @@
       width: 300vw;
       transform: translateX(-50%);
       z-index: -1;
+    }
+
+    &:first-child {
+      margin-bottom: 0;
     }
   }
 }
@@ -199,14 +203,15 @@
   .page__button--extra {
     font-size: 16px;
     line-height: 20px;
-    margin-bottom: 40px;
-    width: 70%;
+    margin-bottom: 0;
+    width: 100%;
   }
 
   .page__button--submit {
     position: relative;
     margin: 0;
-    width: 50%;
+    width: 45%;
+    padding: 14px 10px;
   }
 }
 

@@ -126,6 +126,12 @@
     font-size: 20px;
     line-height: 24px;
 
+    &--extra {
+      padding-top: 146px;
+      width: 134px;
+      margin-bottom: 22px;
+    }
+
     &--extra::before {
       background-image: url("../img/catalog-plus-icon-desktop.svg");
       height: 60px;
@@ -136,9 +142,8 @@
   }
 
   .catalog__card--extra {
-    display: inline;
+    display: flex;
     min-width: 324px;
-    padding: 160px 37px 40px;
     background: none;
     border: 1px solid #f2f2f2;
     min-height: 429px;
@@ -168,6 +173,11 @@
   .catalog__card-description-text {
     font-size: 16px;
     line-height: 20px;
+
+    &--extra {
+      width: 170px;
+      margin-bottom: 79px;
+    }
   }
 
   .catalog__card-description-item {
