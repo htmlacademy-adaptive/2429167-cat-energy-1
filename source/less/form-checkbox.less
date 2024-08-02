@@ -29,6 +29,7 @@
   border: 1px solid #cdcdcd;
   width: 30px;
   height: 30px;
+  transition: all 0.5s ease;
 }
 
 .form-checkbox__checkbox {
@@ -43,6 +44,22 @@
   background-image: url("../img/checkbox-mark-mobile.svg");
   background-repeat: no-repeat;
   background-position: 4px 6px;
+}
+
+.form-checkbox__input[type="checkbox"]:checked:hover + .form-checkbox__input-mark {
+  border: 1px solid #bababa;
+}
+
+.form-checkbox__input[type="checkbox"]:hover + .form-checkbox__input-mark {
+  border: 1px solid #bababa;
+}
+
+.form-checkbox__input[type="checkbox"]:checked:disabled + .form-checkbox__input-mark + .form-checkbox__label {
+  opacity: 30%;
+}
+
+.form-checkbox__input[type="checkbox"]:disabled + .form-checkbox__input-mark + .form-checkbox__label {
+  opacity: 30%;
 }
 
 @media (min-width: @tablet-width) {

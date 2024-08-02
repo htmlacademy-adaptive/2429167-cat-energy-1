@@ -70,6 +70,18 @@
     }
   }
 
+  .header__logo {
+    transition: all 0.5s ease;
+
+    &:hover {
+      opacity: 80%;
+    }
+
+    &:active {
+      opacity: 60%;
+    }
+  }
+
   @media (min-resolution: 2dppx) {
     .header--main::after {
       background: linear-gradient(90deg, @basic-green-transparent 50%, @basic-green-transparent 100%), @bg-image-2x, no-repeat, center;

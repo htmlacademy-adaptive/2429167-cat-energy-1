@@ -47,6 +47,27 @@
   padding-top: 14px;
   padding-bottom: 13px;
   padding-right: 36px;
+  transition: all 0.5s ease;
+
+  &:hover {
+    border: 1px solid #cdcdcd;
+  }
+
+  &:focus {
+    outline: 2px solid #444444;
+  }
+
+  &--error {
+    outline: 2px solid #ff8282;
+  }
+}
+
+.page-form__field:focus + .page-form__field-icon {
+  color: #68b738;
+}
+
+.page-form__field--error + .page-form__field-icon {
+  color: #ff8282;
 }
 
 .page-form__type {
@@ -123,6 +144,22 @@
   width: 13px;
   height: 13px;
   background-color: @basic-green;
+}
+
+.page-form__control-input[type="radio"]:checked:hover + .page-form__control-mark {
+  border: 1px solid #bababa;
+}
+
+.page-form__control-input[type="radio"]:hover + .page-form__control-mark {
+  border: 1px solid #bababa;
+}
+
+.page-form__control-input:disabled + .page-form__control-mark + .page-form__control-label {
+  opacity: 30%;
+}
+
+.page-form__control-input:disabled + .page-form__control-mark::before {
+  opacity: 30%;
 }
 
 .page-form__control-label {

@@ -54,6 +54,16 @@
   width: 130px;
   margin: 0 auto;
   margin-bottom: 40px;
+  transition: all 0.5s ease;
+  cursor: pointer;
+
+  &:hover {
+    opacity: 80%;
+  }
+
+  &:active {
+    opacity: 60%;
+  }
 }
 
 .footer__wrapper {
@@ -105,10 +115,24 @@
   line-height: 20px;
   color: #444444;
   text-decoration: none;
+  transition: all 0.5s ease;
+
+  &:active {
+    opacity: 30%;
+  }
 }
 
 .footer__copyright-link-icon {
   fill: #666666;
+  transition: all 0.5s ease;
+}
+
+.footer__copyright-link:hover .footer__copyright-link-icon {
+  fill: @basic-green;
+}
+
+.footer__copyright-link:active .footer__copyright-link-icon {
+  fill: @basic-green;
 }
 
 .footer__social-link-icon {

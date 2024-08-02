@@ -81,6 +81,11 @@
   &:hover::before {
     background-position: 0 center;
   }
+
+  &:active {
+    opacity: 0.3;
+    transition: opacity 0.5s ease;
+  }
 }
 
 @media (min-width: @tablet-width) {

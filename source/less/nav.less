@@ -132,8 +132,20 @@
     padding-bottom: 8px;
   }
 
-  .nav__link--main {
-    color: #ffffff;
+  .nav__link {
+    transition: all 0.5s ease;
+
+    &:hover {
+      opacity: 60%;
+    }
+
+    &:active {
+      opacity: 30%;
+    }
+
+    &--main {
+      color: #ffffff;
+    }
   }
 
   .nav__item--current-main::before {
