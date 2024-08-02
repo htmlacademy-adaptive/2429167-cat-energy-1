@@ -58,6 +58,7 @@
 @media (min-width: @tablet-width) {
   .page__wrapper {
     &--form {
+      .wrapper();
       padding-left: 70px;
       padding-right: 70px;
     }
@@ -101,6 +102,12 @@
 }
 
 @media (min-width: @desktop-width) {
+  .page__wrapper {
+    &--form {
+      .wrapper();
+    }
+  }
+
   .page__inner-title {
     margin: 0;
     padding-left: 0;
