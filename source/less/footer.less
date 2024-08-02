@@ -124,6 +124,12 @@
   fill: @basic-green-transparent-seconary;
 }
 
+.footer__map-address-part-one,
+.footer__map-address-part-two {
+  margin: 0;
+  padding: 0;
+}
+
 @media (min-width: @tablet-width) {
   .footer__map {
     padding: 0;
@@ -142,6 +148,8 @@
 
   .footer__map-address {
     text-align: right;
+    font-size: 16px;
+    line-height: 20px;
   }
 
   .footer__wrapper {
@@ -174,6 +182,11 @@
 
   .footer__map-text {
     padding: 60px 70px;
+    column-gap: 250px;
+  }
+
+  .footer__map-address-part-two {
+    margin-top: 20px;
   }
 
   .footer__copyright-link-icon {
@@ -217,6 +230,7 @@
     margin: 0;
     padding: 60px 78px 60px 80px;
     background-color: #ffffff;
+    column-gap: 90px;
   }
 
   .footer__wrapper {
