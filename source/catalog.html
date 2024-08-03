@@ -71,7 +71,8 @@
             <li class="catalog__card">
               <a class="catalog__card-link-image" href="#">
                 <picture>
-                  <source media="(min-width: 768px)" srcset="img/catalog-2-desktop.png, img/catalog-2-desktop-2x.png 2x">
+                  <source media="(min-width: 1280px)" srcset="img/catalog-2-desktop.png, img/catalog-2-desktop-2x.png 2x">
+                  <source media="(min-width: 768px)" srcset="img/catalog-2-tablet.png, img/catalog-2-tablet-2x.png 2x">
                   <img src="img/catalog-2.png" srcset="img/catalog-2-2x.png 2x" alt="">
                 </picture>
               </a>
@@ -123,7 +124,8 @@
             <li class="catalog__card">
               <a class="catalog__card-link-image" href="#">
                 <picture>
-                  <source media="(min-width: 768px)" srcset="img/catalog-4-desktop.png, img/catalog-4-desktop-2x.png 2x">
+                  <source media="(min-width: 1280px)" srcset="img/catalog-4-desktop.png, img/catalog-4-desktop-2x.png 2x">
+                  <source media="(min-width: 768px)" srcset="img/catalog-4-tablet.png, img/catalog-4-tablet-2x.png 2x">
                   <img src="img/catalog-4.png" srcset="img/catalog-4-2x.png 2x" alt="">
                 </picture>
               </a>
@@ -175,7 +177,8 @@
             <li class="catalog__card">
               <a class="catalog__card-link-image" href="#">
                 <picture>
-                  <source media="(min-width: 768px)" srcset="img/catalog-6-desktop.png, img/catalog-6-desktop-2x.png 2x">
+                  <source media="(min-width: 1280px)" srcset="img/catalog-6-desktop.png, img/catalog-6-desktop-2x.png 2x">
+                  <source media="(min-width: 768px)" srcset="img/catalog-6-tablet.png, img/catalog-6-tablet-2x.png 2x">
                   <img src="img/catalog-6.png" srcset="img/catalog-6-2x.png 2x" alt="">
                 </picture>
               </a>
@@ -225,10 +228,8 @@
               <a class="page__button page__button--card" href="#">Заказать</a>
             </li>
             <li class="catalog__card catalog__card--extra">
-              <div class="catalog__card-main catalog__card-main--extra">
-                <h3 class="catalog__card-title catalog__card-title--extra">Показать ещё 100500 товаров</h3>
-                <p class="catalog__card-description-text catalog__card-description-text--extra">На самом деле вкусов гораздо больше!</p>
-              </div>
+              <h3 class="catalog__card-title catalog__card-title--extra">Показать ещё 100500 товаров</h3>
+              <p class="catalog__card-description-text catalog__card-description-text--extra">На самом деле вкусов гораздо больше!</p>
               <button type="button" class="page__button page__button--extra">Показать все</button>
             </li>
           </ul>
@@ -281,9 +282,14 @@
           <h3 class="footer__map-title">
             приглашаем <br> к сотрудничеству дилеров!
           </h3>
-          <p class="footer__map-address">
-            ул. Большая Конюшенная, д. 19/8 Санкт-Петербург
-          </p>
+          <div class="footer__map-address">
+            <p class="footer__map-address-part-one">
+              ул. Большая Конюшенная, д. 19/8
+            </p>
+            <p class="footer__map-address-part-two">
+              Санкт-Петербург
+            </p>
+          </div>
         </div>
         <div class="footer__map-map">
           <iframe
@@ -298,6 +304,9 @@
         <ul class="footer__social-list">
           <li class="footer__social-item">
             <a class="footer__social-link footer__social-link--vk" href="#">
+              <svg class="footer__social-link-icon" width="28" height="20">
+                <use xlink:href="img/sprite.svg#icon-vk"></use>
+              </svg>
               <span class="visually-hidden">
                 ВКонтакте
               </span>
@@ -305,6 +314,9 @@
           </li>
           <li class="footer__social-item">
             <a class="footer__social-link footer__social-link--youtube" href="#">
+              <svg class="footer__social-link-icon" width="28" height="19">
+                <use xlink:href="img/sprite.svg#icon-youtube"></use>
+              </svg>
               <span class="visually-hidden">
                 YouTube
               </span>
@@ -312,6 +324,9 @@
           </li>
           <li class="footer__social-item">
             <a class="footer__social-link footer__social-link--telegram" href="#">
+              <svg class="footer__social-link-icon" width="27" height="17">
+                <use xlink:href="img/sprite.svg#icon-telegram"></use>
+              </svg>
               <span class="visually-hidden">
                 Telegram
               </span>
@@ -319,7 +334,12 @@
           </li>
         </ul>
         <div class="footer__copyright">
-          <a class="footer__copyright-link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
+          <a class="footer__copyright-link" href="https://htmlacademy.ru/intensive/adaptive">
+            HTML Academy
+            <svg class="footer__copyright-link-icon" width="27" height="34">
+              <use xlink:href="img/sprite.svg#academy-icon"></use>
+            </svg>
+          </a>
         </div>
       </div>
     </footer>

@@ -112,34 +112,60 @@
     </section>
     <section class="main-example">
       <div class="main-example__wrapper">
-        <h2 class="main-example__title">
-          Живой пример
-        </h2>
-        <p class="main-example__text">
-          Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на Cat Energy Slim. Отличный результат без
-          изнуряющих тренировок! При этом он не менял своих привычек и по-прежнему спит по 16 часов в день.
-        </p>
-        <div class="main-example__results">
-          <div class="main-example__result">
-            <p class="main-example__result-big">
-              5 кг
-            </p>
-            <p class="main-example__result-small">
-              снижения веса
-            </p>
+        <div class="main-example__info">
+          <h2 class="main-example__title">
+            Живой пример
+          </h2>
+          <p class="main-example__text">
+            Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на Cat Energy Slim. Отличный результат без
+            изнуряющих тренировок! При этом он не менял своих привычек и по-прежнему спит по 16 часов в день.
+          </p>
+          <div class="main-example__results">
+            <div class="main-example__result">
+              <p class="main-example__result-big">
+                5 кг
+              </p>
+              <p class="main-example__result-small">
+                снижения веса
+              </p>
+            </div>
+            <div class="main-example__result">
+              <p class="main-example__result-big">
+                60 дней
+              </p>
+              <p class="main-example__result-small">
+                затрачено времени
+              </p>
+            </div>
           </div>
-          <div class="main-example__result">
-            <p class="main-example__result-big">
-              60 дней
+          <div class="main-example__expense">
+            <p class="main-example__expense-part-one">
+              затраты на питание:
             </p>
-            <p class="main-example__result-small">
-              затрачено времени
-            </p>
+            <p class="main-example__expense-part-two">15 000 руб.</p>
           </div>
         </div>
-        <p class="main-example__expense">
-          затраты на питание: 15 000 руб.
-        </p>
+
+        <div class="main-example__slider">
+          <button class="main-example__slider-toggle" type="button">
+            <svg class="main-example__slider-icon" width="24" height="18">
+              <use xlink:href="img/sprite.svg#slider-icon"></use>
+            </svg>
+            <span class="visually-hidden">Переключатель</span>
+          </button>
+          <div class="main-example__slider-before" style="width: 50%;">
+            <picture>
+              <source media="(min-width: 768px)" srcset="img/fat-cat-slider-tablet-1x.png, img/fat-cat-slider-tablet-2x.png 2x">
+              <img class="main-example__slider-pic" src="img/fat-cat-slider-mobile-1x.png" srcset="img/fat-cat-slider-mobile-2x.png 2x">
+            </picture>
+          </div>
+          <div class="main-example__slider-after">
+            <picture>
+              <source media="(min-width: 768px)" srcset="img/slim-cat-slider-tablet-1x.png, img/slim-cat-slider-tablet-2x.png 2x">
+              <img class="main-example__slider-pic" src="img/slim-cat-slider-mobile-1x.png" srcset="img/slim-cat-slider-mobile-2x.png 2x">
+            </picture>
+          </div>
+        </div>
       </div>
     </section>
   </main>
@@ -149,9 +175,14 @@
         <h3 class="footer__map-title">
           приглашаем <br> к сотрудничеству дилеров!
         </h3>
-        <p class="footer__map-address">
-          ул. Большая Конюшенная, д. 19/8 Санкт-Петербург
-        </p>
+        <div class="footer__map-address">
+          <p class="footer__map-address-part-one">
+            ул. Большая Конюшенная, д. 19/8
+          </p>
+          <p class="footer__map-address-part-two">
+            Санкт-Петербург
+          </p>
+        </div>
       </div>
       <div class="footer__map-map">
         <iframe
@@ -166,6 +197,9 @@
       <ul class="footer__social-list">
         <li class="footer__social-item">
           <a class="footer__social-link footer__social-link--vk" href="#">
+            <svg class="footer__social-link-icon" width="28" height="20">
+              <use xlink:href="img/sprite.svg#icon-vk"></use>
+            </svg>
             <span class="visually-hidden">
               ВКонтакте
             </span>
@@ -173,6 +207,9 @@
         </li>
         <li class="footer__social-item">
           <a class="footer__social-link footer__social-link--youtube" href="#">
+            <svg class="footer__social-link-icon" width="28" height="19">
+              <use xlink:href="img/sprite.svg#icon-youtube"></use>
+            </svg>
             <span class="visually-hidden">
               YouTube
             </span>
@@ -180,6 +217,9 @@
         </li>
         <li class="footer__social-item">
           <a class="footer__social-link footer__social-link--telegram" href="#">
+            <svg class="footer__social-link-icon" width="27" height="17">
+              <use xlink:href="img/sprite.svg#icon-telegram"></use>
+            </svg>
             <span class="visually-hidden">
               Telegram
             </span>
@@ -187,7 +227,12 @@
         </li>
       </ul>
       <div class="footer__copyright">
-        <a class="footer__copyright-link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
+        <a class="footer__copyright-link" href="https://htmlacademy.ru/intensive/adaptive">
+          HTML Academy
+          <svg class="footer__copyright-link-icon" width="27" height="34">
+            <use xlink:href="img/sprite.svg#academy-icon"></use>
+          </svg>
+        </a>
       </div>
     </div>
   </footer>

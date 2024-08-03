@@ -1,11 +1,12 @@
 .catalog__list {
   .list-reset();
+  margin-bottom: 52px;
 }
 
 .catalog__card {
   margin: 0 auto;
-  padding-bottom: 25px;
-  padding-top: 20px;
+  padding-bottom: 24px;
+  padding-top: 23px;
   display: grid;
   grid-template-columns: 1fr 1fr;
   justify-items: start;
@@ -15,11 +16,18 @@
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
+    height: unset;
+    padding-top: 13px;
+    padding-bottom: 0;
   }
 }
 
 .catalog__card-link-image {
-  margin: auto auto;
+  width: 140px;
+  height: 107px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   grid-column: 1 / 2;
   grid-row: 1 / 3;
 }
@@ -34,7 +42,7 @@
   text-transform: uppercase;
 
   &--extra {
-    padding-top: 78px;
+    padding-top: 66px;
     margin-bottom: 8px;
     position: relative;
     text-align: center;
@@ -47,7 +55,7 @@
     content: "";
     height: 30px;
     width: 30px;
-    top: 25px;
+    top: 11px;
     left: 45%;
   }
 }
@@ -56,6 +64,7 @@
   text-decoration: none;
   grid-column: 2 / 3;
   width: 76px;
+  margin-bottom: 15px;
 }
 
 .catalog__card-description {
@@ -64,6 +73,7 @@
   display: grid;
   list-style-type: none;
   padding: 0;
+  margin-bottom: 19px;
 }
 
 .catalog__card-description-item {
@@ -90,11 +100,8 @@
 
   &--extra {
     text-align: center;
+    margin-bottom: 19px;
   }
-}
-
-.catalog__card-main--extra {
-  margin-bottom: 21px;
 }
 
 @media (min-width: @tablet-width) {
@@ -112,9 +119,19 @@
     padding-right: 37px;
     padding-bottom: 40px;
     width: 100%;
+    row-gap: unset;
   }
 
   .catalog__card-title {
+    font-size: 20px;
+    line-height: 24px;
+
+    &--extra {
+      padding-top: 146px;
+      width: 134px;
+      margin-bottom: 22px;
+    }
+
     &--extra::before {
       background-image: url("../img/catalog-plus-icon-desktop.svg");
       height: 60px;
@@ -127,25 +144,23 @@
   .catalog__card--extra {
     display: flex;
     min-width: 324px;
-    padding: 0;
     background: none;
-    align-self: flex-end;
     border: 1px solid #f2f2f2;
+    min-height: 429px;
+    align-self: end;
   }
 
   .catalog__card-link-image {
-    margin-bottom: 20px;
-    padding-left: 0;
-    grid-column: 1 / 2;
-    grid-row: 1 / 2;
+    width: 210px;
+    height: 200px;
+    margin-bottom: 23px;
   }
 
   .catalog__card-title-link {
-    grid-column: 1 / 2;
-    grid-row: 2 / 3;
     text-align: center;
-    width: 120px;
+    width: 135px;
     margin: 0 auto;
+    margin-bottom: 20px;
   }
 
   .catalog__card-description {
@@ -158,6 +173,11 @@
   .catalog__card-description-text {
     font-size: 16px;
     line-height: 20px;
+
+    &--extra {
+      width: 170px;
+      margin-bottom: 79px;
+    }
   }
 
   .catalog__card-description-item {
@@ -175,6 +195,7 @@
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 60px;
+    margin-bottom: 69px;
   }
 
   .catalog__card-main--extra {
@@ -186,12 +207,13 @@
 @media (min-width: @desktop-width) {
   .catalog {
     padding: 0;
+    margin-top: 95px;
   }
 
   .catalog__list {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    row-gap: 63px;
+    row-gap: 74px;
     column-gap: 80px;
     margin-bottom: 76px;
   }
@@ -200,17 +222,45 @@
     display: flex;
     flex-direction: column;
     margin: 0 auto;
-    box-sizing: border-box;
     padding: 0 37px 40px;
+  }
+
+  .catalog__card-link-image {
+    width: 169px;
+    height: 210px;
+    margin-bottom: 10px;
+  }
+
+  .catalog__card-title-link {
+    margin-bottom: 25px;
+  }
+
+  .catalog__card-title--extra {
+    padding-top: 147px;
+    width: 134px;
+    margin-bottom: 23px;
   }
 
   .catalog__card-description-item {
     min-width: 169px;
+    padding-bottom: 7px;
+    margin-bottom: 5px;
   }
 
   .catalog__card--extra {
     min-width: 245px;
     padding: 0;
+    align-self: end;
+  }
+
+  .catalog__card-description-text--extra {
+    width: 170px;
+    margin-bottom: 88px;
+  }
+
+  .catalog__card-title--extra::before {
+    top: 44px;
+    left: 27%;
   }
 }
 
@@ -222,6 +272,7 @@
     width: calc(100% + 40px);
     background-color: #ebebeb;
     left: -20px;
+    top: 0;
   }
 
   .catalog__card:last-child::after {
