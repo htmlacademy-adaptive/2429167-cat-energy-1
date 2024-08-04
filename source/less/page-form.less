@@ -154,12 +154,19 @@
   border: 1px solid #bababa;
 }
 
-.page-form__control-input:disabled + .page-form__control-mark + .page-form__control-label {
+.page-form__control-input[type="radio"]:disabled + .page-form__control-mark {
   opacity: 30%;
+  cursor: default;
 }
 
-.page-form__control-input:disabled + .page-form__control-mark::before {
+.page-form__control-input[type="radio"]:disabled + .page-form__control-mark::before {
   opacity: 30%;
+  cursor: default;
+}
+
+.page-form__control-input[type="radio"]:disabled ~ .page-form__control-label {
+  opacity: 30%;
+  cursor: default;
 }
 
 .page-form__control-label {
