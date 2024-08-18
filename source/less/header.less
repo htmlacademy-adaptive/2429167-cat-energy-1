@@ -11,6 +11,7 @@
 
   &--main {
     margin-bottom: 0;
+    z-index: 2;
   }
 }
 
@@ -43,6 +44,10 @@
   .header__logo-text {
     display: none;
   }
+
+  .header__wrapper {
+    justify-content: initial;
+  }
 }
 
 @media (min-width: @desktop-width) {
@@ -68,6 +73,10 @@
       right: 0;
       z-index: -2;
     }
+  }
+
+  .header__wrapper {
+    justify-content: space-between;
   }
 
   .header__logo {

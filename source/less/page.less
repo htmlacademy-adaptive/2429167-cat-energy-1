@@ -13,7 +13,7 @@
   line-height: 36px;
   font-weight: 400;
   margin: 0;
-  margin-bottom: 42px;
+  margin-bottom: 40px;
 }
 
 .page__main {
@@ -45,7 +45,7 @@
   &::before {
     content: "";
     position: absolute;
-    top: 50%;
+    top: 33%;
     left: 100%;
     transform: translateY(-50%);
     display: block;
@@ -53,12 +53,18 @@
     height: 2px;
     background-color: @basic-green;
   }
+
+  &--long {
+    max-width: 206px;
+  }
 }
 
 @media (min-width: @tablet-width) {
   .page__wrapper {
     &--form {
-      .wrapper();
+      width: 100%;
+      max-width: 1220px;
+      margin: 0 auto;
       padding-left: 70px;
       padding-right: 70px;
     }
@@ -105,6 +111,10 @@
 
     &:first-child {
       margin-bottom: 0;
+    }
+
+    &--long {
+      max-width: unset;
     }
   }
 }
