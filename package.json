@@ -8,6 +8,7 @@
     "browser-sync": "2.27.7",
     "del": "6.0.0",
     "gulp": "4.0.2",
+    "gulp-htmlmin": "^5.0.1",
     "gulp-less": "5.0.0",
     "gulp-libsquoosh": "^1.0.12",
     "gulp-plumber": "1.2.1",
@@ -16,6 +17,7 @@
     "gulp-svgmin": "4.1.0",
     "gulp-svgstore": "^8.0.0",
     "gulp-terser": "2.1.0",
+    "gulp-minify.js": "^1.0.9",
     "postcss": "8.3.11",
     "postcss-csso": "^5.0.1",
     "stylelint": "^13.13.1",
@@ -46,8 +48,5 @@
   "engines": {
     "node": "^16"
   },
-  "type": "module",
-  "dependencies": {
-    "gulp-htmlmin": "^5.0.1"
-  }
+  "type": "module"
 }
