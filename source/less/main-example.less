@@ -166,7 +166,6 @@
 
 @media (min-width: @tablet-width) {
   .main-example {
-    position: relative;
     padding-top: 0;
     margin-bottom: 60px;
     background: linear-gradient(to top, #f2f2f2 0, #f2f2f2 400px, #ffffff 400px, #ffffff 100%);
@@ -190,8 +189,11 @@
   }
 
   .main-example__result {
-    margin-right: 43px;
     width: 162px;
+
+    &:first-child {
+      margin-right: 43px;
+    }
   }
 
   .main-example__result-big {
@@ -210,7 +212,6 @@
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
-    position: absolute;
     margin: 0;
     top: 257px;
     left: 564px;
@@ -218,6 +219,8 @@
     font-size: 20px;
     line-height: 20px;
     text-align: right;
+    align-self: center;
+    margin-left: 166px;
   }
 
   .main-example__expense-part-one {
