@@ -4,10 +4,19 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>HTML Academy: Кэт энерджи</title>
-    <link href="css/style.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.min.css">
+    <link href="favicon.ico" rel="icon">
+    <link href="img/favicon.png" rel="icon">
+    <link rel="preload" href="js/script.min.js" as="script">
+    <link rel="preload" href="/fonts/lato/Lato-Regular.woff" as="font">
+    <link rel="preload" href="/fonts/lato/Lato-Regular.woff2" as="font">
+    <link rel="preload" href="/fonts/oswald/oswaldmedium.woff" as="font">
+    <link rel="preload" href="/fonts/oswald/oswaldmedium.woff2" as="font">
+    <link rel="preload" href="/fonts/oswald/oswaldregular.woff" as="font">
+    <link rel="preload" href="/fonts/oswald/oswaldregular.woff2" as="font">
   </head>
   <body class="page__body">
-    <header class="header">
+    <header class="header header--nojs">
       <div class="header__wrapper">
         <a class="header__logo" href="index.html">
           <picture>
@@ -16,10 +25,10 @@
             <img src="img/logo-mobile.svg" alt="Кэт энерджи">
           </picture>
         </a>
-        <a class="header__logo-text" href="#">
+        <a class="header__logo-text" href="index.html">
           <img src="img/logo-text.svg" alt="Кэт энерджи">
         </a>
-        <nav class="nav nav--closed">
+        <nav class="nav nav--nojs nav--closed">
           <button class="nav__toggle" type="button">
             <span class="visually-hidden">Открыть меню</span>
           </button>
@@ -39,7 +48,7 @@
     </header>
     <main class="page__main">
       <div class="page__wrapper page__wrapper--form">
-        <h1 class="page__main-title">Подбор программы</h1>
+        <h1 class="page__main-title page__main-title--form">Подбор программы</h1>
         <section class="form">
           <h2 class="form__title">
             Заполните анкету, и мы подберем программу питания для вашего кота
@@ -84,21 +93,21 @@
                 </li>
               </ul>
             </fieldset>
-            <h2 class="page__inner-title">
+            <h2 class="page__inner-title page__inner-title--long">
               Контактные данные (владельца кота)
             </h2>
             <fieldset class="page-form__contact">
               <label class="page-form__name">
                 <span class="page-form__description">e-mail:*</span>
                 <input class="page-form__field" placeholder="kuklachev@gmail.com" type="email" name="page-form__email" required>
-                <svg class="page-form__field-icon" width="18" height="14" viewBox="0 0 18 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <svg class="page-form__field-icon" width="20" height="20" viewBox="0 0 18 14" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <path d="M0.5 5.5V13.5H17.5V5.5M0.5 0.5H17.5V2.5L9 8.5L0.5 2.5V0.5Z" stroke="currentcolor" stroke-linecap="round" stroke-linejoin="round"/>
                 </svg>
               </label>
               <label class="page-form__name">
                 <span class="page-form__description">телефон:*</span>
                 <input class="page-form__field" placeholder="8 (960) 900-60-90" type="text" name="page-form__phone" required>
-                <svg class="page-form__field-icon" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <svg class="page-form__field-icon" width="20" height="20" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <path d="M7 8H15.5M15.5 8L13 5.5M15.5 8L13 10.5M5.5 0.5V5.5H2.5V10.5H5.5V15.5H3C1.5 15.5 0.5 14.5 0.5 13V3C0.5 1.5 1.5 0.5 3 0.5H5.5Z" stroke="currentcolor" stroke-linecap="round" stroke-linejoin="round"/>
                 </svg>
               </label>
@@ -109,7 +118,7 @@
               <textarea class="page-form__comment-field" placeholder="расскажите обо всех повадках кота" name="page-form__comment"></textarea>
             </label>
             <fieldset class="form-checkbox">
-              <legend class="page__inner-title">Дополнительно</legend>
+              <legend class="page__inner-title page__inner-title--medium">Дополнительно</legend>
               <ul class="form-checkbox__list">
                 <li class="form-checkbox__item">
                   <label class="form-checkbox__checkbox">
@@ -188,7 +197,7 @@
           <li class="footer__social-item">
             <a class="footer__social-link footer__social-link--vk" href="#">
               <svg class="footer__social-link-icon" width="28" height="20">
-                <use xlink:href="img/sprite.svg#icon-vk"></use>
+                <use xlink:href="img/sprite.svg#vk-icon"></use>
               </svg>
               <span class="visually-hidden">
                 ВКонтакте
@@ -198,7 +207,7 @@
           <li class="footer__social-item">
             <a class="footer__social-link footer__social-link--youtube" href="#">
               <svg class="footer__social-link-icon" width="28" height="19">
-                <use xlink:href="img/sprite.svg#icon-youtube"></use>
+                <use xlink:href="img/sprite.svg#youtube-icon"></use>
               </svg>
               <span class="visually-hidden">
                 YouTube
@@ -208,7 +217,7 @@
           <li class="footer__social-item">
             <a class="footer__social-link footer__social-link--telegram" href="#">
               <svg class="footer__social-link-icon" width="27" height="17">
-                <use xlink:href="img/sprite.svg#icon-telegram"></use>
+                <use xlink:href="img/sprite.svg#telegram-icon"></use>
               </svg>
               <span class="visually-hidden">
                 Telegram
@@ -220,13 +229,13 @@
           <a class="footer__copyright-link" href="https://htmlacademy.ru/intensive/adaptive">
             HTML Academy
             <svg class="footer__copyright-link-icon" width="27" height="34">
-              <use xlink:href="img/sprite.svg#academy-icon"></use>
+              <use xlink:href="img/sprite.svg#htmlacademy"></use>
             </svg>
           </a>
         </div>
       </div>
     </footer>
 
-    <script src="js/menu-script.js"></script>
+    <script src="js/script.min.js"></script>
   </body>
 </html>

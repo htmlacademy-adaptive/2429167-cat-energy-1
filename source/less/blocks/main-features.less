@@ -84,10 +84,10 @@
 
   .main-features__list {
     display: grid;
-    grid-template-columns: 280px 280px;
+    grid-template-columns: 1fr 1fr;
     padding: 0;
     row-gap: 45px;
-    column-gap: 104px;
+    column-gap: 60px;
     counter-reset: features;
   }
 
@@ -97,46 +97,28 @@
     padding-top: 143px;
     padding-bottom: 57px;
     position: relative;
-  }
 
-  .main-features__item::after {
-    top: 31px;
-    width: 80px;
-    height: 80px;
-  }
+    &::after {
+      top: 31px;
+      width: 80px;
+      height: 80px;
+    }
 
-  .main-features__item::before {
-    counter-increment: features;
-    content: "" counter(features) "";
-    position: absolute;
-    font-family: "Oswald", sans-serif;
-    font-size: 280px;
-    line-height: 280px;
-    color: #f2f2f2;
-    z-index: -1;
-    bottom: 0;
-    right: 0;
-    text-align: center;
-  }
-
-  .main-features__item--step-one::before {
-    bottom: 1px;
-    right: 56px;
-  }
-
-  .main-features__item--step-two::before {
-    bottom: 1px;
-    right: 35px;
-  }
-
-  .main-features__item--step-three::before {
-    bottom: 1px;
-    right: 33px;
-  }
-
-  .main-features__item--step-four::before {
-    bottom: 1px;
-    right: 33px;
+    &::before {
+      counter-increment: features;
+      content: "" counter(features) "";
+      position: absolute;
+      font-family: "Oswald", sans-serif;
+      font-size: 280px;
+      line-height: 280px;
+      color: #f2f2f2;
+      z-index: -1;
+      bottom: -1px;
+      right: 63px;
+      text-align: center;
+      width: 160px;
+      display: block;
+    }
   }
 
   .main-features__text {
@@ -156,23 +138,10 @@
     column-gap: 77px;
   }
 
-  .main-features__item--step-one::before {
-    bottom: 1px;
-    right: 24px;
-  }
-
-  .main-features__item--step-two::before {
-    bottom: 1px;
-    right: 0;
-  }
-
-  .main-features__item--step-three::before {
-    bottom: 1px;
-    right: 0;
-  }
-
-  .main-features__item--step-four::before {
-    bottom: 1px;
-    right: 0;
+  .main-features__item {
+    &::before {
+      width: 134px;
+      right: 0;
+    }
   }
 }
