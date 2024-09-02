@@ -160,7 +160,25 @@
     }
 
     &::before {
-      top: 63%;
+      top: 62%;
+    }
+
+    &::after {
+      left: 0;
+      width: 100%;
+    }
+
+    &--long {
+      max-width: max-content;
+    }
+
+    &--long::after {
+      left: 0;
+      width: 100%;
+    }
+
+    &--long::before {
+      top: 50%;
     }
   }
 }
@@ -224,7 +242,7 @@
 
   &--main {
     display: block;
-    width: 95%;
+    width: calc(100% - 40px);
     padding: 10px 22px;
     font-size: 16px;
     line-height: 20px;
@@ -289,6 +307,7 @@
 
   .page__button--extra {
     margin-bottom: 0;
+    width: 70%;
   }
 
   .page__button--card {

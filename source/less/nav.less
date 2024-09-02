@@ -15,6 +15,9 @@
 
 .nav--nojs .nav__list {
   display: block;
+  position: static;
+  width: 100vw;
+  margin-left: -20px;
 }
 
 .nav__toggle {
@@ -59,6 +62,10 @@
   &::after {
     display: none;
   }
+}
+
+.nav--nojs .nav__toggle {
+  display: none;
 }
 
 .nav__link {
