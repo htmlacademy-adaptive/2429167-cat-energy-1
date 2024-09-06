@@ -22,13 +22,16 @@
   color: #444444;
   padding-left: 45px;
   padding-top: 6px;
-}
 
-.form-checkbox__input-mark {
-  position: absolute;
-  border: 1px solid #cdcdcd;
-  width: 30px;
-  height: 30px;
+  &::before {
+    content: "";
+    position: absolute;
+    border: 1px solid #cdcdcd;
+    width: 30px;
+    height: 30px;
+    left: 0;
+    top: 0;
+  }
 }
 
 .form-checkbox__checkbox {
@@ -38,22 +41,26 @@
   height: 30px;
 }
 
-.form-checkbox__input[type="checkbox"]:checked + .form-checkbox__input-mark {
+.form-checkbox__input[type="checkbox"]:checked ~ .form-checkbox__label::after {
+  content: "";
   position: absolute;
   background-image: url("../img/checkbox-mark-mobile.svg");
   background-repeat: no-repeat;
-  background-position: 4px 6px;
+  width: 24px;
+  height: 19px;
+  left: 6px;
+  top: 8px;
 }
 
-.form-checkbox__input[type="checkbox"]:checked:hover + .form-checkbox__input-mark {
+.form-checkbox__input[type="checkbox"]:checked:hover ~ .form-checkbox__label::before {
   border: 1px solid #bababa;
 }
 
-.form-checkbox__input[type="checkbox"]:hover + .form-checkbox__input-mark {
+.form-checkbox__input[type="checkbox"]:hover ~ .form-checkbox__label::before {
   border: 1px solid #bababa;
 }
 
-.form-checkbox__input[type="checkbox"]:checked:disabled + .form-checkbox__input-mark {
+.form-checkbox__input[type="checkbox"]:checked:disabled ~ .form-checkbox__label::after {
   opacity: 30%;
   cursor: default;
 }
@@ -63,7 +70,7 @@
   cursor: default;
 }
 
-.form-checkbox__input[type="checkbox"]:disabled + .form-checkbox__input-mark {
+.form-checkbox__input[type="checkbox"]:disabled ~ .form-checkbox__label::after {
   opacity: 30%;
   cursor: default;
 }
@@ -101,17 +108,18 @@
     line-height: 30px;
     padding-left: 60px;
     padding-top: 10px;
+
+    &::before {
+      width: 40px;
+      height: 40px;
+      top: 4px;
+    }
   }
 
-  .form-checkbox__input-mark {
-    width: 40px;
-    height: 40px;
-    top: 4px;
-  }
-
-  .form-checkbox__input[type="checkbox"]:checked + .form-checkbox__input-mark {
+  .form-checkbox__input[type="checkbox"]:checked ~ .form-checkbox__label::after {
     background-image: url("../img/checkbox-mark-desktop.svg");
-    background-position: 7px 10px;
+    top: 16px;
+    left: 8px;
   }
 
   .form-checkbox__checkbox {
