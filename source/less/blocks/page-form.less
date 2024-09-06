@@ -53,11 +53,15 @@
   }
 
   &:focus {
-    outline: 2px solid #444444;
+    border: 2px solid #444444;
+  }
+
+  &:active {
+    border: 2px solid #444444;
   }
 
   &--error {
-    outline: 2px solid #ff8282;
+    border: 2px solid #ff8282;
   }
 }
 
@@ -106,6 +110,22 @@
   padding-left: 15px;
   margin-bottom: 23px;
   resize: none;
+
+  &:hover {
+    border: 1px solid #cdcdcd;
+  }
+
+  &:focus {
+    border: 2px solid #444444;
+  }
+
+  &:active {
+    border: 2px solid #444444;
+  }
+
+  &--error {
+    border: 2px solid #ff8282;
+  }
 }
 
 .page-form__warning {
@@ -126,15 +146,18 @@
   display: flex;
 }
 
-.page-form__control-mark {
+.page-form__control-label::after {
+  content: "";
   position: absolute;
   border-radius: 50%;
   border: 1px solid #cdcdcd;
   width: 30px;
   height: 30px;
+  left: 0;
+  top: 0;
 }
 
-.page-form__control-input[type="radio"]:checked + .page-form__control-mark::before {
+.page-form__control-input[type="radio"]:checked + .page-form__control-label::before {
   position: absolute;
   content: "";
   top: 8px;
@@ -145,20 +168,20 @@
   background-color: @basic-green;
 }
 
-.page-form__control-input[type="radio"]:checked:hover + .page-form__control-mark {
+.page-form__control-input[type="radio"]:checked:hover + .page-form__control-label::after {
   border: 1px solid #bababa;
 }
 
-.page-form__control-input[type="radio"]:hover + .page-form__control-mark {
+.page-form__control-input[type="radio"]:hover + .page-form__control-label::after {
   border: 1px solid #bababa;
 }
 
-.page-form__control-input[type="radio"]:disabled + .page-form__control-mark {
+.page-form__control-input[type="radio"]:disabled + .page-form__control-label::after {
   opacity: 30%;
   cursor: default;
 }
 
-.page-form__control-input[type="radio"]:disabled + .page-form__control-mark::before {
+.page-form__control-input[type="radio"]:disabled + .page-form__control-label::before {
   opacity: 30%;
   cursor: default;
 }
@@ -279,14 +302,14 @@
     padding-left: 60px;
   }
 
-  .page-form__control-mark {
+  .page-form__control-label::after {
     width: 40px;
     height: 40px;
   }
 
-  .page-form__control-input[type="radio"]:checked + .page-form__control-mark::before {
-    top: 10px;
-    left: 10px;
+  .page-form__control-input[type="radio"]:checked + .page-form__control-label::before {
+    top: 12px;
+    left: 11px;
     width: 18px;
     height: 18px;
   }

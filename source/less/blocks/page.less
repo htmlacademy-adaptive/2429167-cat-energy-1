@@ -1,6 +1,7 @@
 .page__body {
   margin: 0;
   overflow-x: hidden;
+  font-family: "Lato", sans-serif;
 }
 
 .page__wrapper {
@@ -32,8 +33,9 @@
   margin: 0;
   margin-bottom: 35px;
   position: relative;
-  max-width: max-content;
   padding-right: 20px;
+  max-width: 182px;
+  box-sizing: content-box;
 
   &:first-child {
     margin-bottom: 35px;
@@ -64,6 +66,10 @@
     &::before {
       top: 33%;
     }
+  }
+
+  &--medium {
+    max-width: 211px;
   }
 }
 
@@ -127,7 +133,7 @@
     }
 
     &--long {
-      max-width: unset;
+      max-width: 515px;
 
       &::after {
         left: -40px;
@@ -169,7 +175,7 @@
     }
 
     &--long {
-      max-width: max-content;
+      max-width: 515px;
     }
 
     &--long::after {
